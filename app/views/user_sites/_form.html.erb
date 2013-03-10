@@ -1,0 +1,29 @@
+<%= form_for(@user_site) do |f| %>
+  <% if @user_site.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_site.errors.count, "error") %> prohibited this user_site from being saved:</h2>
+
+      <ul>
+      <% @user_site.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :site_id %><br />
+    <%= f.collection_select :site_id, Site.all, :id, :url %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

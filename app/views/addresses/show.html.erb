@@ -1,0 +1,45 @@
+
+
+<p>
+  <b>Address1:</b>
+  <%= @address.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @address.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @address.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @address.state %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @address.country %>
+</p>
+
+<p>
+  <b>Zip5:</b>
+  <%= @address.zip5 %>
+</p>
+
+<p>
+  <b>Zip4:</b>
+  <%= @address.zip4 %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @address.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

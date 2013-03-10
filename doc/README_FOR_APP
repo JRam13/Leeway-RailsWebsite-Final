@@ -1,0 +1,12 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+rails new final
+rails g scaffold User name password_digest
+rails g scaffold Site url icon script:integer
+rails g scaffold User_Site user_id:integer site_id:integer username password
+rails g scaffold User_Detail user_id:integer fname lname email
+rails g scaffold Credit_Card user_id:integer number:integer
+month:integer year:integer ccv:integer address_id:integer
+rails g scaffold Address user_id:integer address1 address2 city state
+country zip5:integer zip4:integer phone:integer

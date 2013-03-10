@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OneWay Airlines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <!-- <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" type="text/css" href="http://bootswatch.com/united/bootstrap.min.css">
+  <style type="text/css">
+    body { padding-top: 60px; padding-bottom: 40px; }
+  </style>
+  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+  <style type="text/css">
+    .table thead th { font-size: 20px; background: #5484a7; color: white; text-align: center; height: 30px; padding: 12px; vertical-align: middle}
+    .table td { text-align: center; }
+  </style>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/images/apple-touch-icon-114x114.png">
+</head>
+<body>
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand span2" href="/">OneWay Airlines</a>
+        <div class="nav-collapse">
+          <form class="navbar-search pull-left" action="">
+            <input type="text" class="search-query span3" placeholder="Search by city or airport code">
+          </form>
+          <ul class="nav pull-right">
+            <li><a href="/airports">Cities</a></li>
+            <li><a href="/support">Customer Support</a></li>
+            <li><a href="/profile.html">My Profile</a></li>
+            <li><a href="#about">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="span12">
+        <h1 class="page-header">Customer Support</h1>
+
+        <h3>MVP User Stories</h3>
+        <ol>
+  <li>As a visitor, I want to see the list of flights that are available each day.</li>
+  <li>As a visitor, I want to create a user account, so that I can make reservations.</li>
+  <li>As a user, I want to see a profile page that shows how many frequent flyer miles I’ve earned.</li>
+  <li>As a user, I want to make a reservation.</li>
+  <li>As a user, I want to see my reservations in my account profile.</li>
+  <li>As a user, I expect my frequent flyer mileage total to increase every time I reserve a flight.</li>
+  <li>As a user, I want to search for flights by airport code.</li>
+  <li>As a user, I want to search for flights by airport code or city name.</li>
+  <li>As a user, I want to first see my account profile when I login.</li>
+  <li>As an administrator, I want to view all reservation activity.</li>
+  <li>As an administrator, I want to see the total amount of revenue to date.</li>
+  <li>As a user, I want to receive an email confirming my reservation.</li>
+</ol>
+
+<h3>Ground Rules (get it?)</h3>
+
+<ol>
+  <li>The same flights will occur at the same time every single day.  A flight is defined as the combination of:
+
+    <ul>
+      <li>A unique flight number</li>
+      <li>Departure airport code</li>
+      <li>Departure time</li>
+      <li>Arrival airport code</li>
+      <li>Arrival time</li>
+      <li>Distance in miles</li>
+      <li>Duration in minutes</li>
+    </ul>
+  </li>
+  <li>Site visitors must create a secure user account in order book a reservation.</li>
+
+  <li>A user account should contain at least:
+
+    <ul>
+      <li>First name</li>
+      <li>Last name</li>
+      <li>Email address</li>
+      <li>Secure password</li>
+      <li>Frequent Flyer miles earned</li>
+    </ul>
+  </li>
+
+  <li>A reservation is defined as the specific combination of: 
+    <ul>
+      <li>A user</li>
+      <li>A flight</li>
+      <li>A specific departure date</li>
+      <li>A valid credit card number</li>
+    </ul>
+  </li>
+  <li>Planes fly at about 8 miles per minute, so the arrival time and flight duration could, in theory, be calculated rather than stored in the database.</li>
+  <li>Every OneWay flight costs the same: $70.</li>
+  <li>We only accept Visa credit cards.  Visa cards are 16-digits numbers that always start with the number 4.</li>
+</ol>
+<h3>Mileage Chart</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>From</th>
+    <th>To</th>
+    <th>Miles</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ORD</td>
+      <td>JFK</td>
+      <td>740</td>
+    </tr>
+    <tr>
+      <td>ORD</td>
+      <td>LAX</td>
+      <td>1744</td>
+    </tr>
+    <tr>
+      <td>ORD</td>
+      <td>SFO</td>
+      <td>1846</td>
+    </tr>
+    <tr>
+      <td>JFK</td>
+      <td>LAX</td>
+      <td>2475</td>
+    </tr>
+    <tr>
+      <td>JFK</td>
+      <td>SFO</td>
+      <td>2586</td>
+    </tr>
+    <tr>
+      <td>LAX</td>
+      <td>SFO</td>
+      <td>338</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+    <hr>
+
+    <footer>
+      <p>&copy;2013 OneWay Airlines</p>
+    </footer>
+  </div> <!-- /container -->
+
+
+</body>
+</html>
+
+

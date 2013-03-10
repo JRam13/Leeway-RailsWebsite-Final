@@ -1,0 +1,24 @@
+<h1>User Details</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Fname</th>
+    <th>Lname</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_details.each do |user_detail| %>
+  <tr>
+    <td><%= user_detail.fname %></td>
+    <td><%= user_detail.lname %></td>
+    <td><%= user_detail.email %></td>
+    <td><%= link_to 'Edit', edit_user_detail_path(user_detail) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

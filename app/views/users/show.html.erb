@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h2>Profile for <%= @user.name %></h2>
+<br>
+Your Credit Cards:<br>
+  <% @user.credit_cards.each do |cc| %>
+    <li><%= cc.number %> as <%= cc.month %></li>
+  <% end %>
+<br>
+<br>
+Your Addresses:<br>
+  <% @user.addresses.each do |a| %>
+    <li><%= a.address1 %> - <%= link_to 'Show', a %></li>
+  <% end %>
+<br>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

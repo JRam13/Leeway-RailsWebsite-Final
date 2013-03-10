@@ -1,0 +1,30 @@
+
+
+<p>
+  <b>Number:</b>
+  <%= @credit_card.number %>
+</p>
+
+<p>
+  <b>Month:</b>
+  <%= @credit_card.month %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @credit_card.year %>
+</p>
+
+<p>
+  <b>Ccv:</b>
+  <%= @credit_card.ccv %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @credit_card.address_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_credit_card_path(@credit_card) %> |
+<%= link_to 'Back', credit_cards_path %>

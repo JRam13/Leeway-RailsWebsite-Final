@@ -1,0 +1,27 @@
+<h1>All Supported Sites</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Icon</th>
+    <th>Script</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sites.each do |site| %>
+  <tr>
+    <td><%= site.url %></td>
+    <td><%= site.icon %></td>
+    <td><%= site.script %></td>
+    <td><%= link_to 'Show', site %></td>
+    <td><%= link_to 'Edit', edit_site_path(site) %></td>
+    <td><%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Site', new_site_path %>

@@ -1,0 +1,25 @@
+
+
+<p>
+  <b>User:</b>
+  <%= @user_detail.user_id %>
+</p>
+
+<p>
+  <b>Fname:</b>
+  <%= @user_detail.fname %>
+</p>
+
+<p>
+  <b>Lname:</b>
+  <%= @user_detail.lname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user_detail.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_detail_path(@user_detail) %> |
+<%= link_to 'Back', user_details_path %>

@@ -1,0 +1,20 @@
+
+
+<p>
+  <b>Url:</b>
+  <%= @site.url %>
+</p>
+
+<p>
+  <b>Icon:</b>
+  <%= @site.icon %>
+</p>
+
+<p>
+  <b>Script:</b>
+  <%= @site.script %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>

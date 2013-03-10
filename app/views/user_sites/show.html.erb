@@ -1,0 +1,19 @@
+
+<p>
+  <b>Site:</b>
+  <%= @user_site.site.url %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @user_site.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user_site.password %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_site_path(@user_site) %> |
+<%= link_to 'Back', user_sites_path %>
