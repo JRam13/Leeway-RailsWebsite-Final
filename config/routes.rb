@@ -12,6 +12,6 @@ OneWayAir::Application.routes.draw do
   post "sessions/create"
   get "sessions/destroy" => 'sessions#destroy', :as => :sign_out
 
-  root to: 'sites#index'
+  root to: 'sessions#new'
 
 end

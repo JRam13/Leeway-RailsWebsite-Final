@@ -50,7 +50,10 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(params[:user])
+    @user = User.new()
+    @user.name = params[:name]
+    @user.password = params[:password]
+    
     Mailer.confirm().deliver
     respond_to do |format|
       if @user.save

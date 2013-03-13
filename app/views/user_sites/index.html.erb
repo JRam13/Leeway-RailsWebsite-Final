@@ -1,15 +1,28 @@
-<h1>My Sites</h1>
+<header id="top-title-bar"><figure><img src="/assets/images/top-bar.png" width="240" height="24" alt="SEO KEYWORDS"></figure></header>
+<div id="top-title-bar-sdevice"><figure><img src="/assets/images/top-bar-small.png" width="250" height="20" alt="SEO KEYWORDS"></figure></div>
 
-<table>
-  <tr>
-    <th>Site</th>
-    <th>Username</th>
-    <th>Password</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1 id="top-work">Leeway</h1>
+    
+    <div id="thumb-wrapper">
+        <section id="work-detail-wrapper" class="swipe">
+                
+        </section> <!--section#work-detail-wrapper-->
+        
+        <section id="works" class="work-launcher">
+            <ul id="thumbs">
+              <p>TEST</p>
+                <li class="thumb cat-identity"><a href="work-seo-name-01.html" title="SEO KEYWORDS"><img src="/assets/images/works-samples/thumb-04.jpg" alt="work-thumb-01" /></a></li>
+                <li class="thumb cat-identity"><a href="work-seo-name-02.html" title="SEO KEYWORDS"><img src="/assets/images/works-samples/thumb-05.jpg" alt="work-thumb-01" /></a></li>
+                
+            </ul>
+  </section><!--end section#works-->
+  </div><!--end div#thumbwrapper-->
 
+  <script src="/assets/js/smartLoader.js"></script>
+
+
+
+<!-- ACCOUNTS GO HERE
 <% @user_sites.each do |user_site| %>
   <tr>
     <td><%= user_site.site.url %></td>
@@ -20,8 +33,5 @@
     <td><%= link_to 'Destroy', user_site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New User site', new_user_site_path %>
+-->

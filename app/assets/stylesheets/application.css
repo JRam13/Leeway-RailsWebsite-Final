@@ -11,34 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-
-body {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 16px;
-  width: 960px;
-  margin: 20px auto;
-}
-
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-td {
-  padding: 12px 0px;
-  font-size: 18px;
-  border-bottom: solid 1px #5484a7;
-}
-
-table {
-  margin-top: 24px;
-  width: 80%;
-}
-th {
-  padding-bottom: 12px;
-  font-size: 20px;
-  text-align: left;
-  font-weight: bold;
-  border-bottom: 4px solid #5484a7;
-}

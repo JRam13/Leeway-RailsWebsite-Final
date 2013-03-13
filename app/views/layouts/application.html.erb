@@ -1,45 +1,23 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Leeway</title>
+<title>Leeway | Home</title>
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+<!--This template use google fonts-->
+<link  href="http://fonts.googleapis.com/css?family=Raleway:100&amp;v1" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Terminal+Dosis+Light:regular" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css" >
+<!--+++++END CSS+++++-->
+
+<!--+++++JAVASCRIPT+++++-->
+<!--+++++END JAVASCRIPT+++++-->
+
 </head>
-<body>
-  <h1><a class="brand span2" href="/">Leeway</a></h1>
 
-      <a href="/addresses">Addresses</a> - 
-      <a href="/credit_cards">Credit Cards</a> - 
-      <a href="/user_details">User Details</a> - 
-      <a href="/user_sites">User Sites</a> - 
-      <% if session[:admin] %>
-      <a href="/users">Users</a> - 
-      <% end %>
-      <a href="/sites">All Sites</a> - 
-
-      <% if session[:user_id] %>
-        <%= link_to "My Profile", user_url(session[:user_id]) %> - 
-        <%= link_to "Sign Out", sign_out_url %>
-      <% else %>
-        <%= link_to "Sign Up!", new_user_url %> - 
-        <%= link_to "Sign In", sign_in_url %>
-      <% end %>
-
-  <hr>
-  
-  <%= notice %>
-  <%= yield %>
-
-  <hr>
-  <br>
-  <footer>
-    &copy;2013 Leeway - doit@getleeway.com
-    <br> User Logged in: <%= session[:user_id] %> 
-    <% if session[:admin] %>
-      <br> User Is Admin: <%= session[:admin] %>
-    <% end %>
-  </footer>
-
-</body>
-</html>
+<% yield %>
