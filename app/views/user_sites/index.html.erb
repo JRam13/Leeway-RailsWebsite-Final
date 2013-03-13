@@ -1,7 +1,5 @@
-<header id="top-title-bar"><figure><img src="/assets/images/top-bar.png" width="240" height="24" alt="SEO KEYWORDS"></figure></header>
-<div id="top-title-bar-sdevice"><figure><img src="/assets/images/top-bar-small.png" width="250" height="20" alt="SEO KEYWORDS"></figure></div>
+<%= render '/layouts/toptiles' %>
 
-<h1 id="top-work">Leeway</h1>
     
     <div id="thumb-wrapper">
         <section id="work-detail-wrapper" class="swipe">
@@ -10,15 +8,15 @@
         
         <section id="works" class="work-launcher">
             <ul id="thumbs">
-              <p>TEST</p>
-                <li class="thumb cat-identity"><a href="work-seo-name-01.html" title="SEO KEYWORDS"><img src="/assets/images/works-samples/thumb-04.jpg" alt="work-thumb-01" /></a></li>
-                <li class="thumb cat-identity"><a href="work-seo-name-02.html" title="SEO KEYWORDS"><img src="/assets/images/works-samples/thumb-05.jpg" alt="work-thumb-01" /></a></li>
+              <% @user_sites.each do |user_site| %>
+                <li class="thumb cat-identity"><a href="<%= user_site.site.url %>" title=""><img src="<%= user_site.site.icon %>" alt="work-thumb-01" /></a></li>
+                <% end %>
                 
             </ul>
   </section><!--end section#works-->
   </div><!--end div#thumbwrapper-->
 
-  <script src="/assets/js/smartLoader.js"></script>
+  <%= render '/layouts/bottomtiles' %>
 
 
 
