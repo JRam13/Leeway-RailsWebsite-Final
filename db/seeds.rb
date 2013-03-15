@@ -10,12 +10,28 @@ User.create name: "user2", password: "user2"
 User.create name: "user3", password: "user3"
 User.create name: "user4", password: "user4"
 User.create name: "user5", password: "user5"
-Site.create url: "twitter.com", icon: "twitter.com/picture", script: 1
-Site.create url: "youtube.com", icon: "youtube.com/picture", script: 1
-Site.create url: "friendster.com", icon: "friendster.com/picture", script: 1
-Site.create url: "dogster.com", icon: "dogster.com/picture", script: 1
-Site.create url: "catfancy.com", icon: "catfancy.com/picture", script: 1
-Site.create url: "uchicago.com", icon: "uchiago.com/picture", script: 1
+User.create name: "jeff", password: "hockey" 
+Site.create url: "amazon.com", icon: "amazon.tiff", script: 1
+Site.create url: "americanexpress.com", icon: "americanexpress.tiff", script: 2
+Site.create url: "catster.com", icon: "catster.tiff", script: 3
+Site.create url: "chase.com", icon: "chase.tiff", script: 4
+Site.create url: "comed.com", icon: "comed.tiff", script: 5
+Site.create url: "conedison.com", icon: "conedison.tiff", script: 6
+Site.create url: "dogster.com", icon: "dogster.tiff", script: 7
+Site.create url: "facebook.com", icon: "facebook.tiff", script: 8
+Site.create url: "grubhub.com", icon: "grubhub.tiff", script: 9
+Site.create url: "intuit.com", icon: "intuit.tiff", script: 10
+Site.create url: "netsuit.com", icon: "netsuite.tiff", script: 11
+Site.create url: "office.com", icon: "office.tiff", script: 12
+Site.create url: "salesforce.com", icon: "salesforce.tiff", script: 13
+Site.create url: "seamless.com", icon: "seamless.tiff", script: 14
+Site.create url: "staples.com", icon: "staples.tiff", script: 15
+Site.create url: "sugarcrm.com", icon: "sugarcrm.tiff", script: 16
+Site.create url: "twitter.com", icon: "twitter.tiff", script: 17
+Site.create url: "uber.com", icon: "uber.tiff", script: 18
+Site.create url: "vmware.com", icon: "vmware.tiff", script: 19
+Site.create url: "workday.com", icon: "workday.tiff", script: 20
+Site.create url: "workmarket.com", icon: "workmarket.tiff", script: 21
 UserSite.create user_id: 1, site_id: 1, username: "test1u", password: "test1p"
 UserSite.create user_id: 2, site_id: 2, username: "test2u", password: "test2p"
 UserSite.create user_id: 3, site_id: 3, username: "test3u", password: "test3p"
@@ -26,22 +42,25 @@ UserSite.create user_id: 2, site_id: 6, username: "test2u6", password: "test2p6"
 UserSite.create user_id: 3, site_id: 6, username: "test3u6", password: "test3p6"
 UserSite.create user_id: 4, site_id: 6, username: "test4u6", password: "test4p6"
 UserSite.create user_id: 5, site_id: 6, username: "test5u6", password: "test5p6"
+UserSite.create user_id: 6, site_id: 1, username: "site1username", password: "site1passwor"
 Address.create user_id: 1, address1: "address1"
 Address.create user_id: 2, address1: "address2"
 Address.create user_id: 3, address1: "address3"
 Address.create user_id: 4, address1: "address4"
 Address.create user_id: 5, address1: "address5"
+Address.create user_id: 6, address1: "Merchandise Mart", address2: "222 W Merchandise Mart Plaza", city: "Chicago", state: "IL", zip5: 60654, zip4: 0000, country: "USA", phone: 1234567890
 CreditCard.create user_id: 1, number: 0001, month: 1, year: 1970, ccv: 999
 CreditCard.create user_id: 2, number: 0002, month: 1, year: 1970, ccv: 999
 CreditCard.create user_id: 3, number: 0003, month: 1, year: 1970, ccv: 999
 CreditCard.create user_id: 4, number: 0004, month: 1, year: 1970, ccv: 999
 CreditCard.create user_id: 5, number: 0005, month: 1, year: 1970, ccv: 999
+CreditCard.create user_id: 6, number: 0006000600060006, month: 1, year: 1970, ccv: 999
 UserDetail.create user_id: 1, fname: "name1", admin: true
 UserDetail.create user_id: 2, fname: "name2", admin: false
 UserDetail.create user_id: 3, fname: "name3"
 UserDetail.create user_id: 4, fname: "name4"
 UserDetail.create user_id: 5, fname: "name5"
-
+UserDetail.create user_id: 6, fname: "Jeff", lname: "Cohen", email: "jeffcohen@cs.uchicago.edu"
 
 
 
