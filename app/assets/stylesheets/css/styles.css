@@ -163,7 +163,7 @@ body#top-nav #thumb-wrapper{margin-top:0px 0 0 0;*padding-top:0px;width:100%;ove
 /*********NAV DEFAULT**************/
 
 /*********Nav Shadow**************/
-nav#main-nav{position:fixed;display:block;background:url(/assets/images/backgrounds/pattern-nav-01.png) #f9f9f9;height:100%;top:0;left:0;z-index:1000;box-shadow: 4px 0 10px rgba(0,0,0,0.30);}
+nav#main-nav{position:fixed;display:block;background:url(/assets/images/backgrounds/gal-bg-noisy-purple2.png) #f9f9f9;height:100%;top:0;left:0;z-index:1000;box-shadow: 4px 0 10px rgba(0,0,0,0.30);}
 
 #main-nav #tab-nav{display:block;position:absolute;right:-40px;top:46%;width:42px;height:42px;}
 /*********Nav Arrow Image > **************/
@@ -171,12 +171,12 @@ nav#main-nav{position:fixed;display:block;background:url(/assets/images/backgrou
 /*********Top menu where social links are. Can change the width animation when clicking on a button, good to hide page. **************/
 #main-nav #nav-menu{position:relative;font-family:'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, arial, sans;width:200px;height:100%;padding:0 10px 0 20px;*font-size:1.5em;/*fix size in IE7*/}
 /*********When top nav buttons are pushed, changes style of bottom nav**************/
-#main-nav #nav-menu h4{font-size:.75em;margin:0 0 8px 10px;text-transform:uppercase;}
+#main-nav #nav-menu h4{color:#FF0; font-size:.75em;margin:0 0 8px 10px;text-transform:uppercase;}
 /*********When top nav buttons are pushed, changes margins bottom nav**************/
 #main-nav #nav-menu #filters{position:relative;margin-top:10%;}
 /*********Changes bottom nav.**************/
 #main-nav #nav-options{position:absolute;height:400px;bottom:5%;margin-left:5%;}
-#main-nav #nav-options2{position:absolute;height:400px;bottom:40%;margin-left:5%;}
+#main-nav #nav-options2{position:absolute;height:400px;top:5%;margin-left:5%;}
 
 /*********Nav Menu Logo**************/
 #main-nav #nav-menu #logo{
@@ -208,7 +208,7 @@ nav#main-nav #nav-options ul li a{
 	font-weight:100;
 	font-weight:300\9;
     line-height: .95em;
-	color:#313131;
+	color:#FFF;
 	display:block;
 	text-decoration:none;
 	padding-left:10px;
@@ -244,7 +244,7 @@ nav#main-nav #nav-options2 ul li a{
 	font-weight:100;
 	font-weight:300\9;
     line-height: .95em;
-	color:#313131;
+	color:#FFF;
 	display:block;
 	text-decoration:none;
 	padding-left:10px;
@@ -255,7 +255,7 @@ nav#main-nav #nav-options2 ul li a:hover{
 	-o-transition: all 0.2s; 
 	transition: all 0.2s;
 	background:#ffea00;
-	color:#000;
+	color:#FFF;
 	width:75%;
 	padding-left:15px;
 	}
@@ -270,9 +270,9 @@ nav#main-nav #social-wrapper{position:relative;font:normal .85em/1.7em 'Maven Pr
 /*********Top Nav Style**************/
 nav#main-nav #social-wrapper ul#network-menu{font-size:.75em;*font-size:.5em;/*fix size in IE7*/position:relative;width:250px;margin:0;padding:0;}
 nav#main-nav ul#network-menu li{*width:55px;#float:left;#font-size:1.2em;}
-nav#main-nav ul#network-menu li a{display:block;height:23px;float:left;margin-right:10px;color:#000;border-top:0px solid #ffea00;text-decoration:none;-moz-transition: all .2s; -webkit-transition: all .2s;-o-transition: all .2s;transition: all .2;}
+nav#main-nav ul#network-menu li a{display:block;height:23px;float:left;margin-right:10px;color:#FFF;border-top:0px solid #ffea00;text-decoration:none;-moz-transition: all .2s; -webkit-transition: all .2s;-o-transition: all .2s;transition: all .2;}
 nav#main-nav ul#network-menu li a:hover{border-top:5px solid #ffea00;-moz-transition: all .2s; -webkit-transition: all .2s;-o-transition: all .2s;transition: all .2s;}
-nav#main-nav p#copyright{position:absolute;top:98%;margin-left:0px;font-size:.55em;color:#989898;padding-left:20px;}
+nav#main-nav p#copyright{position:absolute;top:98%;margin-left:0px;font-size:.55em;color:#DDD;padding-left:20px;}
 nav#main-nav #nav-options ul li #filters-launcher{display:none;}
 nav#main-nav #tap-close{display:none;}
 nav#main-nav .close-sub{display:none;}
@@ -282,12 +282,12 @@ nav#main-nav .close-sub{display:none;}
 body#top-nav #slide-controls{display:none;}
 body#top-nav #slide-controls{display:block;width:34px;margin-top:25px;position:fixed;z-index:2000;}
 body#top-nav #slide-controls p{position:absolute;}
-body#top-nav p.launch-nav a{position:relative;display:block;width:34px;height:34px;background:url(../images/btn-open-top-nav.png) no-repeat center;margin:0 auto;padding:50px 0 0 0;text-indent:-9999px;}
+body#top-nav p.launch-nav a{position:relative;display:block;width:34px;height:34px;background:url(/assets/images/btn-open-top-nav.png) no-repeat center;margin:0 auto;padding:50px 0 0 0;text-indent:-9999px;}
 body#top-nav nav#main-nav{position:relative;display:block;height:350px;width:100%;top:0;left:0;z-index:1000;}
 body#top-nav p.scroll-to-menu{display:none;}
 body#top-nav p.show{display:block;}
-body#top-nav p.scroll-to-menu a{position:relative;display:block;width:34px;height:34px;background:url(../images/btn-scroll-top-nav.png) no-repeat center;margin:0 auto;padding:50px 0 0 0;text-indent:-9999px;}
-body#top-nav p.open-nav a{background:url(../images/btn-close-top-nav.png) no-repeat center;}
+body#top-nav p.scroll-to-menu a{position:relative;display:block;width:34px;height:34px;background:url(/assets/images/btn-scroll-top-nav.png) no-repeat center;margin:0 auto;padding:50px 0 0 0;text-indent:-9999px;}
+body#top-nav p.open-nav a{background:url(/assets/images/btn-close-top-nav.png) no-repeat center;}
 body#top-nav p.thepixels{color:#000;left:100px;}
 body#top-nav nav#main-nav{display:none;}
 body#top-nav #main-nav #nav-menu{width:97%;height:300px;padding-top:50px;}
@@ -332,10 +332,10 @@ overflow: visible;
 	z-index:200;
 	cursor: pointer;
 }
-#work-detail-wrapper span#closebt a{opacity:.3;transition: opacity 0.4s;-webkit-transition: opacity 0.4s;-moz-transition: opacity 0.4s;display:block;width:39px;height:39px;background:url(../images/btn-close-black.png) no-repeat;text-indent:-9999px;}
+#work-detail-wrapper span#closebt a{opacity:.3;transition: opacity 0.4s;-webkit-transition: opacity 0.4s;-moz-transition: opacity 0.4s;display:block;width:39px;height:39px;background:url(/assets/images/btn-close-black.png) no-repeat;text-indent:-9999px;}
 #work-detail-wrapper span#closebt a:hover{opacity:1;}
-#work-detail-wrapper .item-wrapper span#closebt a{display:block;width:15px;height:15px;background:url(../images/btn-close-white.png) no-repeat;text-indent:-9999px;margin-left:-55px;}
-#work-detail-wrapper .item-wrapper span#closebt a:hover{background:url(../images/btn-close-yellow.png) no-repeat;}
+#work-detail-wrapper .item-wrapper span#closebt a{display:block;width:15px;height:15px;background:url(/assets/images/btn-close-white.png) no-repeat;text-indent:-9999px;margin-left:-55px;}
+#work-detail-wrapper .item-wrapper span#closebt a:hover{background:url(/assets/images/btn-close-yellow.png) no-repeat;}
 #work-gal{font-family:'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, arial, sans;font-size:.8em;}
 #work-gal p{font-family:'Maven Pro', helvetica, arial, sans;font-size:1em;*font-size:1.4em;width:510px;margin:10px 50px 0 0;float:left;}
 #work-gal p a{text-decoration:none;text-transform:uppercase;font-size:.8em;padding:2px;color:#ffea00;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
@@ -350,10 +350,10 @@ overflow: visible;
 #work-gal .info-extended li span{color:#999;padding-left:30px;}
 #work-gal .info-extended li:last-child span{margin-left:-8px;}
 
-#work-gal-photo #fdgNav span#fdgPrev{float:left;background:url(../images/slide-pixel-l-arrow-release-photo.png) no-repeat center center;}
-#work-gal-photo #fdgNav span#fdgPrev:hover{background:url(../images/slide-pixel-l-arrow-hover-photo.png) no-repeat center center}
-#work-gal-photo #fdgNav span#fdgNext{float:right;background: url(../images/slide-pixel-r-arrow-release-photo.png) no-repeat center center;}
-#work-gal-photo #fdgNav span#fdgNext:hover{background:url(../images/slide-pixel-r-arrow-hover-photo.png) no-repeat center center}
+#work-gal-photo #fdgNav span#fdgPrev{float:left;background:url(/assets/images/slide-pixel-l-arrow-release-photo.png) no-repeat center center;}
+#work-gal-photo #fdgNav span#fdgPrev:hover{background:url(/assets/images/slide-pixel-l-arrow-hover-photo.png) no-repeat center center}
+#work-gal-photo #fdgNav span#fdgNext{float:right;background: url(/assets/images/slide-pixel-r-arrow-release-photo.png) no-repeat center center;}
+#work-gal-photo #fdgNav span#fdgNext:hover{background:url(/assets/images/slide-pixel-r-arrow-hover-photo.png) no-repeat center center}
 #work-gal-photo #fdgNav span#fdgPrev.hide, #work-gal-photo #fdgNav span#fdgNext.hide{background:none;cursor: default;}
 
 #work-detail-wrapper{position:relative;z-index:20;background:#f2f2f2;}
@@ -414,7 +414,7 @@ overflow: visible;
 	display:block;
 	width:43px;
 	height:43px;
-	background:url(../images/skins-items/sprite-gal-v2.png) no-repeat 0 -171px #000;
+	background:url(/assets/images/skins-items/sprite-gal-v2.png) no-repeat 0 -171px #000;
 	opacity:1;
 	-webkit-transition: all .15s ease;
 	-moz-transition: all .15s ease-in-out;
@@ -446,12 +446,12 @@ overflow: visible;
 	}
 .gal-v2 #work-detail-wrapper #work-gallery span#hide-info a:hover{width:65px;height:65px;line-height:64px;margin:-7px -7px 0 0;}
 
-.gal-v2 #work-detail-wrapper #work-gallery span#closebt a:hover{background:url(../images/skins-items/sprite-gal-v2.png) no-repeat -43px -171px #FFF;}
+.gal-v2 #work-detail-wrapper #work-gallery span#closebt a:hover{background:url(/assets/images/skins-items/sprite-gal-v2.png) no-repeat -43px -171px #FFF;}
 
 .gal-v2 #work-detail-wrapper #work-gallery{background-color:#f3f3f3;background-repeat: no-repeat;background-size: cover;font-family:'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, arial, sans;font-size:.8em;*font-size:1.2em;}
 
 .gal-v2 #work-detail-wrapper #work-gallery .item .info-work #info{width:50%;;margin:7% 0 0 7%;}
-.gal-v2 #work-detail-wrapper #work-gallery h3{display:block;font-size:11em;color:#dedede;line-height:.9em;text-transform:uppercase;margin-bottom:15px;letter-spacing:-5px;}
+.gal-v2 #work-detail-wrapper #work-gallery h3{display:block;font-size:6em;color:#dedede;line-height:.9em;text-transform:uppercase;margin-bottom:15px;letter-spacing:-5px;}
 .gal-v2 #work-detail-wrapper #work-gallery h4, .gal-v2 #work-detail-wrapper #work-gallery h5{font-family:'Arvo', 'Terminal Dosis Light';font-size:1.7em;text-transform:uppercase;color:#b33533;font-weight:bold;margin-bottom:7px;}
 .gal-v2 #work-detail-wrapper #work-gallery h5{font-size:1em;line-height:1em;margin:5px 20px 0 0;}
 .gal-v2 #work-detail-wrapper #work-gallery .divider{border-top:1px solid #dedede;margin-top:30px;}
@@ -508,8 +508,8 @@ overflow: visible;
 *********************************************/
 
 /**** SECTION - DEF SKIN (base styles based on higher reolutions to 1440px. Rest resolutions are managed in media queries)****/
-.section{position:relative;font:normal 1em/1.7em 'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, sans;font-weight:100;width:100%;height:100%;background:#f2f2f2;}
-.section-wrapper{position:relative;width:960px;left:12%;top:16%;color:#414141;text-transform:uppercase;}
+.section{position:relative;font:normal 1em/1.7em 'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, sans;font-weight:100;width:100%;height:100%;background:#fff;}
+.section-wrapper{position:relative;width:960px;left:12%;top:16%;color:#fff;text-transform:uppercase;}
 .section-wrapper .breadcrumbs{font-size:1em;font:normal .7em/1.7em 'Arvo', Georgia, serif;}
 
 /**** ABOUT - DEF SKIN ****/
@@ -574,7 +574,7 @@ overflow: visible;
 #mydribbble ul.shots li #date-shot{color:#808080;font-size:.65em;text-align:center;margin-top:10px;text-transform:uppercase;}
 
 #mydribbble #slide-navigation{position:absolute;right:-350px;margin-top:-65px;}
-#mydribbble .btn-next, #mydribbble .btn-prev{position:relative;opacity:.6;font-family:'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, arial, sans;font-size:2em;text-decoration:none;color:#313131;margin-right:35px;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#mydribbble .btn-next, #mydribbble .btn-prev{position:relative;opacity:.6;font-family:'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, arial, sans;font-size:2em;text-decoration:none;color:#fff;margin-right:35px;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
 #mydribbble .btn-next:hover, .btn-prev:hover{opacity:1;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
 
 

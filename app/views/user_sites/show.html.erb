@@ -1,4 +1,62 @@
+<div id="work-gallery" class="item-wrapper" style="background-color:#444">
+    <span id="closebt" class="close-work-detail"><a href="#">close</a></span>
+    
+    <div class="item">
+    
+    <br />
+    
+    <h4 style="text-align:center;"><%= @user_site.site.url %></h4>
+    
+    <br />
+    
+    	<div class="info-work">
+            <div id="info" class="scrollable">
+                <h3><%= @user_site.site.url %></h3>
+                <h4>User: <%= @user_site.username %></h4>
+                <h5>Email: </h5>
+                <h5>Password: <%= @user_site.password %><a href="#"><br />Change Password</a></h5>
+                <br />
+                <h5>Date: <%= @user_site.updated_at %></h5>
+                <div class="divider">&nbsp;</div>
+                <p><a href="http://www.<%= @user_site.site.url %>">Launch Site Here</a></p>
+                <p>If you need to make any changes to your private information for this account, please go to the <a href="#">Accounts page.</a></p>
+          </div><!--end div#info-->
+		</div><!--end div.info-work-->
+            	<div id="slideshow">
+    		<ul id="fdgSlides">
+				<li><a href="#"><img src="/assets/sites/<%= @user_site.site.icon %>.jpg" alt="work-thumb-01" /></a></li>
+			</ul>
+        </div><!--end slideshow-->
+    
+   
+</div>
+</div><!--end div.item-wrapper-->
 
+<script src="/assets/js/loadworks.js"></script>
+<script src="/assets/js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript">
+			$(window).load(function(){
+				$(function()
+				{
+					$('.scrollable').jScrollPane();
+				});
+			})
+			
+			$(function()
+				{
+					$('.scrollable').jScrollPane();
+			});
+			
+			$('.scrollable').hover(function(){
+					$(".jspVerticalBar").fadeIn("fast")
+				
+				}, function(){
+					$(".jspVerticalBar").fadeOut("fast")
+			})
+</script>
+
+<!--
 <p>
   <b>Site:</b>
   <%= @user_site.site.url %>
@@ -17,3 +75,5 @@
 
 <%= link_to 'Edit', edit_user_site_path(@user_site) %> |
 <%= link_to 'Back', user_sites_path %>
+
+-->

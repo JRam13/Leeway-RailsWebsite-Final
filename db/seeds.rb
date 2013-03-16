@@ -61,13 +61,3 @@ UserDetail.create user_id: 3, fname: "name3"
 UserDetail.create user_id: 4, fname: "name4"
 UserDetail.create user_id: 5, fname: "name5"
 UserDetail.create user_id: 6, fname: "Jeff", lname: "Cohen", email: "jeffcohen@cs.uchicago.edu"
-
-
-
-
-
-
-
-
-
-
