@@ -9,7 +9,7 @@
         <section id="works" class="work-launcher">
             <ul id="thumbs">
               <% @user_sites.each do |user_site| %>
-                <li class="thumb cat-identity"><a href="<%= user_site.site.url %>" title=""><img src="/assets/<%= user_site.site.icon %>.jpg" alt="work-thumb-01" /></a></li>
+                <li class="thumb cat-identity"><a href="user_sites/<%= user_site.id %>" title=""><img src="/assets/sites/<%= user_site.site.icon %>" alt="work-thumb-01" /></a></li>
                 <% end %>
                 
             </ul>

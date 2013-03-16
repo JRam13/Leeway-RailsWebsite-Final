@@ -1,0 +1,184 @@
+/* Desktops and laptops ----------- */
+	/**********NAV**************/
+	#main-nav{font-size:1em;*font-size:1.2em;width:235px;}
+	#main-nav #tab-nav{display:block;position:absolute;right:-42px;top:46%;width:46px;height:39px;}
+	#main-nav #tab-nav img{margin-left:20px;}
+	#main-nav #nav-menu{position:relative;width:200px;height:100%;padding:0 10px 0 20px;}
+	#main-nav #nav-menu h4.nav-section{font-size:.75em;}
+	#main-nav #nav-menu #nav-options h4.section{font-size:1.1em;}
+	#main-nav #nav-menu #main-logo{margin:-20px 0 20px -175px;}
+	nav#main-nav #nav-options{position:absolute;height:250px;}
+	nav#main-nav #social-wrapper{position:relative;width:220px;margin:55px 0 50px -5px;padding:0;}
+	nav#main-nav #social-wrapper ul#network-menu{position:relative;margin:0;padding:0;}
+	nav#main-nav ul#network-menu li a{display:block;line-height:20px;float:left;margin-right:10px;color:#fff;border-top:0px solid #ffea00;text-decoration:none;-moz-transition: all .2s; -webkit-transition: all .2s;-o-transition: all .2s;transition: all .2;}
+	
+	nav#main-nav #nav-options #filters{position:absolute;display:none;width:87%;margin-top:0;}
+	nav#main-nav #nav-options ul{display:block;margin-bottom:15%;width:183px;}
+	nav#main-nav #nav-options ul li{display:block;padding:0px;}
+	nav#main-nav #nav-options ul li a{
+		display:inline;
+		-moz-transition: all .7s; 
+		-webkit-transition: all .7s; 
+		-o-transition: all .7s; 
+		transition: all .7s;
+		width:110%;
+		background:transparent;
+		font-size: 1.45em;
+		*font-size: 1.2em;
+		font-style: italic;
+		font-weight:100;
+		font-weight:300\9;
+		line-height: .95em;
+		color:#fff;
+		display:block;
+		text-decoration:none;
+		padding-left:10px;
+	}
+	nav#main-nav #nav-options ul li a:hover{
+		-moz-transition: all 0.2s; 
+		-webkit-transition: all 0.2s; 
+		-o-transition: all 0.2s; 
+		transition: all 0.2s;
+		background:#ffea00;
+		color:#000;
+		width:90%;
+		padding-left:20px;
+		}
+	nav#main-nav #nav-options ul li.active{padding-left:0px;}
+		
+	a.btn-back-sections{position:absolute;top:-30px;display:block;font-size:.7em;font-style:italic;text-transform:italic;color:#fff;width:100px;text-decoration:none;}
+	
+	nav#main-nav #nav-options ul li #filters-launcher{display:block;}
+	nav#main-nav .close-sub{display:block;}
+	nav#main-nav p#copyright{font-size:.56em;color:#989898;padding-left:15px;top:97%}
+	
+	/*TOP NAVIGATION STYLES*/
+
+	body#top-nav #slide-controls{display:none;} /*hide controls for top navigation in normal modes : no top nav mode*/
+	body#top-nav #slide-controls{display:block;width:34px;margin-top:25px;position:fixed;z-index:2000;}
+	body#top-nav #slide-controls p{position:absolute;}
+	body#top-nav p.launch-nav a{position:relative;display:block;width:34px;height:34px;background:url(../images/btn-open-top-nav.png) no-repeat center;margin:0 auto;padding:50px 0 0 0;text-indent:-9999px;}
+	body#top-nav nav#main-nav{position:relative;display:block;height:330px;width:100%;top:0;left:0;z-index:1000;}
+	body#top-nav p.scroll-to-menu{display:none;}
+	body#top-nav p.show{display:block;}
+	body#top-nav p.scroll-to-menu a{position:relative;display:block;width:34px;height:34px;background:url(../images/btn-scroll-top-nav.png) no-repeat center;margin:0 auto;padding:50px 0 0 0;text-indent:-9999px;}
+	body#top-nav p.open-nav a{background:url(../images/btn-close-top-nav.png) no-repeat center;}
+	body#top-nav p.thepixels{color:#000;left:100px;}
+	body#top-nav nav#main-nav{display:none;}
+	body#top-nav #main-nav{font-size:.9em;*font-size:1em;}
+	body#top-nav #main-nav #nav-menu{width:93%;height:300px;padding-top:50px;}
+	body#top-nav #main-nav #nav-menu h4{margin:0 0 10px 0;font-size:.9em;}
+	body#top-nav #main-nav #nav-menu #filters{position:relative;display:block;margin-top:0%;width:auto;float:left;}
+	body#top-nav #main-nav ul{display:block;width:250px;display:block;float: left;}
+	body#top-nav nav#main-nav #nav-options ul li #filters-launcher{display:none;}
+	body#top-nav #main-nav #nav-options{width:94%;height:195px;margin-left:7%;}
+	body#top-nav #main-nav #nav-menu #main-logo{margin:35px 0 30px -65px;}
+	body#top-nav nav#main-nav #nav-options #filter{margin-top:-100px;}
+	body#top-nav nav#main-nav #nav-options ul{position:relative;display:block;float:left;width:220px;}
+	body#top-nav nav#main-nav #nav-options ul li a{width:90%;}
+	body#top-nav nav#main-nav #nav-options ul li a:hover{width:65%;}
+	body#top-nav nav#main-nav #social-wrapper{position:absolute;width:100%;top:25px;z-index:100;}
+	body#top-nav nav#main-nav #social-wrapper ul{width:195px;}
+	body#top-nav nav#main-nav p#copyright{margin:-30px 0 0 7%;}
+
+	
+	/****SECTIONS****/
+	.section-wrapper{font-size:.75em;left:12%;top:16%;}
+	.section-wrapper .breadcrumbs{font-size:.9em;}
+	h2{line-height:1.8em;width:650px;margin-bottom:25px;}
+	
+	/****ABOUT****/
+	#about .section-wrapper{width:680px;*font-size:1em;}
+	#about .section-intro {width:670px;}
+	#about div.section-wrapper div.section-content p{font-size:1.2em;width:400px;}
+	#about .section-wrapper figure{width:215px;}
+	#about .section-wrapper img{max-width:100% !important;height:auto !important;}
+	div.content div img{max-width:100% !important;height:auto !important;margin:0;}
+	
+	/****NEWS****/
+	#news .section-wrapper ul li{font-size:1.1em;*font-size:1.5em;line-height:1.6em;}
+	#news .section-wrapper ul li small{margin:15px 0 10px 0;}
+	#news .section-wrapper ul li a{font-size:.9em;}
+	#news .section-wrapper ul li h2{font-size:1.8em;}
+	#news #wdgt-twitter .jta-tweet-list{margin-top:15px;}
+	#news #wdgt-twitter .jta-tweet-list-item{padding:0px;margin:0px;}
+	#news #wdgt-twitter .jta-tweet-text{font-style:italic;}
+	#news #wdgt-twitter .jta-tweet-hashtag{background-color:transparent}
+	#news #wdgt-twitter .jta-tweet-timestamp a{display:block;background-color:transparent;text-align:right;color:#bbb;}
+
+	
+	/****DRIBBBLE****/
+	#mydribbble h2{line-height:1.4em;margin:20px 0 20px 0;width:400px;}
+	#mydribbble #mydribbble-stats{font-size:.95em;font-style:italic;line-height /*\**/:.5em\9;line-height:1.5em \0/IE9;line-height /*\**/: .5em\9}
+	#mydribbble #mydribbble-stats{line-height:1.5em \0/IE9;}
+	#mydribbble #username{line-height /*\**/: 1em\9;line-height:1em \0/IE9;}
+	#mydribbble #username{padding-top /*\**/: 20px\9}
+	#mydribbble #username{padding-top:40px \0/IE9;line-height:1em \0/IE9;}
+	#mydribbble #mydribbble-drafts{position:absolute;left:500px;margin:-16px 0 0 -30px;z-index:1000;display:none\9;*display:none;#display:none;_display:none;}
+	#mydribbble #mydribbble-drafts .plus-following{display:block;padding:1px 3px 0px 3px;font-size:1em;background:#ffea00;color:#000;margin-left:10px;display:none\9;}
+	#mydribbble #mydribbble-drafts ul{display:none;padding-top:15px;margin-left:10px;display:none\9;}
+	#mydribbble #mydribbble-drafts ul li a{background:#000;color:#ffea00;font-size:1em;line-height:2.3em;padding:5px;}
+	#mydribbble ul.shots{width:300px;margin-top:20px;}
+	#mydribbble ul.shots li{width:300px;float:left;margin-right:0px;}
+	#mydribbble ul.shots li h3{font-size:1.3em;}
+	#mydribbble ul.shots li a.in-shot{display:block;width:250px;height:185.5px;border:8px solid #FFF;}
+	#mydribbble ul.shots li #date-shot{color:#808080;font-size:.9em;text-align:center;margin-top:10px;text-transform:uppercase;}
+	#mydribbble #mydribbble-shots ul li img{width:250px;height:185.5px;}
+
+	#mydribbble #slide-navigation{position:absolute;right:80px;margin-top:-65px;}
+	#mydribbble .btn-next, .btn-prev{position:relative;opacity:.6;font-family:'Terminal Dosis Light', 'Raleway', 'Maven Pro', Helvetica, arial, sans;font-size:2em;text-decoration:none;color:#fff;margin-right:15px;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+	#mydribbble .btn-next:hover, .btn-prev:hover{opacity:1;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+
+	
+	/******CONTACT******/
+	#contact h2{width:450px;};
+	#contact ul{width:150px;}
+	#contact ul li{font-size:1em;*font-size:1.2em;}
+	#contact ul li:last-child{font-size:1em;}
+	div.contact-form{width:260px;height:295px;height /*\**/: 270px\9;margin-left:-110px;font-size:1.2em;}
+	div.contact-form form input,textarea{width:210px;}
+	div.contact-form form input.form-submit{margin:30px 0 0 150px;width:80px;height:35px;line-height:15px;}	
+	
+	/**** GALLERY V1 STYLES ****/
+	#work-detail-wrapper .item-wrapper .item .info-work{}
+	#work-detail-wrapper .item-wrapper .item div#divThumbs{}
+	#work-gal{font-size:.7em;}
+	#work-gal p{line-height:1.5em;width:400px;margin:10px 35px 0 0;}
+	#work-gal p a{text-decoration:none;text-transform:uppercase;font-size:.7em;padding:2px;color:#ffea00;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+	#work-gal h3{line-height:2em;}
+	#work-gal #pagination{margin-left:30px;}
+	
+	
+	/**** GALLERY V2 STYLES ****/
+	.gal-v2 #work-detail-wrapper span#info-btn{right:12%;}
+	.gal-v2 #work-detail-wrapper #work-gallery .item-wrapper span#closebt{right:-10%;margin-right:100px;width:15px;height:15px;}
+	.gal-v2 #work-detail-wrapper #work-gallery .item .info-work #info{width:60%;;margin:5% 0 0 9%;}
+	.gal-v2 #work-detail-wrapper #work-gallery h3{font-size:7em;line-height:.9em;margin-bottom:15px;width:85%;}
+	.gal-v2 #work-detail-wrapper #work-gallery h4, #work-detail-wrapper #work-gallery h5{font-size:1.3em;margin-bottom:5px;}
+	.gal-v2 #work-detail-wrapper #work-gallery h5{font-size:1em;line-height:1em;margin:5px 20px 0 0;}
+	.gal-v2 #work-detail-wrapper #work-gallery .divider{margin-top:30px;}
+	.gal-v2 #work-detail-wrapper #work-gallery p{font-size:1em;line-height:1.5em;margin:10px 0 0 0;}
+	.gal-v2 #work-detail-wrapper #work-gallery #pagination{margin:0 0 15px 0px;font-size:1em;}
+	
+	/*Adjust a little the vertical centering for all the videos*/
+	.video-container {margin-top:-30px;}
+	
+	/*********************************************
+	**** SCROLLABLE AREAS
+	*********************************************/
+	
+	/* Styles based in particular parts of the theme*/
+	#about .scrollable {width:800px;height:65%;overflow:auto;}
+	#about .scrollable .content {width:375px;float:left;width:675px\9;_width:675px;*width:675px;margin-right:40px\9;_margin-right:40px;*margin-right:40px;font-size:.9em;line-height:1.7em;}
+	#about .section-intro{width:675px;}
+	
+	/* iPad (landscape) ----------- */
+	@media only screen 
+	and (min-device-width : 481px) 
+	and (max-device-width : 1025px) 
+	and (orientation : landscape) {
+		.content {width:675px !important;}
+		#about .scrollable {-webkit-overflow-scrolling: touch;}
+		#about .scrollable .content {-webkit-overflow-scrolling: touch;}
+		body#top-nav #work-detail-wrapper .item-wrapper .item .info-work .info-extended{display:none;}		
+		}

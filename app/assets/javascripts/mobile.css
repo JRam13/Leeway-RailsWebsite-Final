@@ -1,0 +1,222 @@
+/* Smartphones (landscape) ----------- */
+	
+	#top-title-bar{display:none;}
+	#top-title-bar-sdevice{display:block;width:100%;margin:0 auto;}
+	#thumb-wrapper{margin-top:20px;}
+
+	/**********NAV**************/
+	#main-nav{font-size:1em;width:195px;}
+	#main-nav #tab-nav{display:block;position:absolute;right:-34px;top:46%;width:46px;height:85px;}
+	#main-nav #nav-menu{width:95px;}
+	#main-nav #nav-menu h4.nav-section{font-size:.75em;}
+	#main-nav #nav-menu #nav-options h4.section{font-size:1.1em;}
+	nav#main-nav #social-wrapper{position:relative;font:normal .65em/1.7em 'Maven Pro', sans;}
+	#main-nav #nav-menu #main-logo{margin-bottom:15px;margin-left:-200px;}
+	nav#main-nav #social-wrapper{top:-20px;}
+	nav#main-nav #nav-options{position:absolute;height:210px;}
+	nav#main-nav #social-wrapper{position:relative;width:170px;margin:50px 0 50px -5px;padding:0;}
+	nav#main-nav #social-wrapper ul#network-menu{position:relative;margin:0;padding:0;}
+	nav#main-nav ul#network-menu li a{display:block;line-height:20px;font-style:italic;float:left;margin-right:10px;color:#000;border-top:0px solid #ffea00;text-decoration:none;-moz-transition: all .2s; -webkit-transition: all .2s;-o-transition: all .2s;transition: all .2;}
+	
+	nav#main-nav #nav-options #filters{position:absolute;display:none;width:87%;margin-top:0;}
+	nav#main-nav #nav-options ul{display:block;margin-bottom:15%;width:183px;}
+	nav#main-nav #nav-options ul li{display:block;padding:0px;}
+	nav#main-nav #nav-options ul li a{font-size: 1em;}
+		
+	nav#main-nav #nav-options span a.btn-back-sections{position:absolute;top:-30px;display:block;font-size:.7em;font-style:italic;text-transform:italic;color:#fff;width:100px;text-decoration:none;}
+	
+	nav#main-nav #nav-options ul li #filters-launcher{display:block;}
+	nav#main-nav .close-sub{display:block;}
+	nav#main-nav p#copyright{display:none;}
+	
+	/*TOP NAVIGATION STYLES*/
+	body#top-nav #slide-controls{margin-top:5px;}
+	body#top-nav nav#main-nav{height:230px;}
+	body#top-nav nav#main-nav{display:none;}
+	body#top-nav #main-nav #nav-menu{width:260px;height:180px;padding-top:50px;margin:0 auto;}
+	body#top-nav #main-nav #nav-menu h4{margin:0 0 10px 0;font-size:.9em;}
+	body#top-nav #main-nav #nav-menu #filters{position:relative;display:block;margin-top:0%;width:auto;float:left;}
+	body#top-nav #main-nav ul{display:block;width:120px;display:block;float:left;}
+	body#top-nav nav#main-nav #nav-options ul li #filters-launcher{display:none;}
+	body#top-nav #main-nav #nav-options{width:90%;height:150px;margin-left:5%;top:80px;font-size:.8em;}
+	body#top-nav #main-nav #nav-menu #logo{display:none !important;}
+	body#top-nav nav#main-nav #nav-options #filter{margin-top:-100px;}
+	body#top-nav nav#main-nav #nav-options ul{position:relative;display:block;float:left;}
+	body#top-nav nav#main-nav #social-wrapper{position:absolute;width:74%;height:25px;top:140px;z-index:100;font-size:.6em;}
+	body#top-nav nav#main-nav #social-wrapper ul{width:195px;}
+	body#top-nav nav#main-nav p#copyright{margin:-30px 0 0 110px;}
+	
+	/****ABOUT****/
+	.section-wrapper{font-size:.6em;top:8%;left:13%;}
+	.section-wrapper h2{font-size:2em;line-height:1em;width:200px;margin:20px 0 10px 20px;}
+	#about h2.claim{width:75%;font-size:1.5em;line-height:1.2em;padding:15px 0 15px 0;margin:0 auto;}
+	.section-wrapper{width:240px;margin:0 0;text-align:center;}
+	#about .section-intro{font-size:1.2em;}
+	.section-wrapper .breadcrumbs{width:100%;}
+	#about div.section-wrapper div.section-content p{font-size:1em;line-height:1.4em;width:75%;margin:0 auto;}
+	#about .section-wrapper figure{display:none;}
+	
+	/****DRIBBBLE****/
+	body .section-wrapper #mydribbble{text-align:left;}
+	#mydribbble h2{font-size:2em;line-height:1.4em;margin:20px 0 -30px 0;width:400px;text-align:left;}
+	#mydribbble .section-wrapper .breadcrumbs{text-align:left;}
+	#mydribbble #mydribbble-stats{font-size:.75em;font-style:italic;text-align:left;width:400px;}
+	#mydribbble #mydribbble-stats p, #mydribbble #mydribbble-stats p a{font-size:.65em;}
+	#mydribbble .avatar {width:50px;margin-top:40px;}
+	#mydribbble #mydribbble-drafts{position:absolute;left:500px;margin:-14px 0 0 -80px;z-index:1000;}
+	#mydribbble #mydribbble-drafts .plus-following{display:block;padding:0px 4px 0px 4px;font-size:1em;background:#ffea00;color:#000;}
+	#mydribbble #mydribbble-drafts ul{display:none;padding-top:15px;text-align:left;}
+	#mydribbble #mydribbble-drafts ul li a{display:inline;background:#000;color:#ffea00;font-size:1.3em;line-height:2.2em;padding:5px;}
+	#mydribbble #mydribbble-shots {margin-top:-75px;}
+	#mydribbble ul.shots{width:400px;text-align:center;}
+	#mydribbble ul.shots li{width:100%;}
+	#mydribbble ul.shots li h3{font-size:1.3em;}
+	#mydribbble ul.shots li a.in-shot{display:block;width:200px;height:145.5px;border:8px solid #FFF;text-align:left;}
+	.section-wrapper ul.shots ul li a{display:none;opacity:0;}
+	#mydribbble ul.shots li #date-shot{color:#808080;font-size:1em;text-align:center;margin-top:10px;text-transform:uppercase;}
+	#mydribbble #mydribbble-shots ul li img{width:250px;height:185.5px;}
+	.bx-next, .bx-prev{display:none;}
+	
+	/* NEWS
+	-------------------------------------*/
+	#news .section-wrapper {width: 100% !important;text-align: center;top: 40px;left: 0;height:80%;}
+	#news .section-wrapper .section-content{width:100%;}
+	#news .breadcrumbs{width:100%;}
+	#news .section-wrapper h2{font-size:2em;margin-left:0px;}
+	#news .news-title{font-size:1.2em !important;line-height:1.3em !important;}
+	#news .post-content{margin-bottom:40px;}
+	#news .section-wrapper ul li small{margin:5px 0 10px 0;font-size:1em;}
+	#news .section-wrapper ul{width:100%;float:left;margin-right:75px;}
+	#news .section-wrapper ul li{display:block;width:75%;margin:0 auto;font-size:1.2em;line-height:1.5em;}
+	#news #wdgt-twitter{width:100%;min-height:200px !important;float:left;margin-top:50px;}
+	#news #wdgt-twitter .jta-tweet-list{margin-top:20px;}
+	#news #wdgt-twitter .jta-tweet-timestamp a{text-align:center;}
+	
+	/******CONTACT******/
+	#contact .breadcrumbs{width:100%;}
+	#contact h2{width:75%;margin:15px auto 15px auto;}
+	#contact ul {width:100%;}
+	#contact ul li{font-size:1.1em;width:75%;margin:0 auto;}
+	#contact div.contact-form{display:none;}
+	
+	/**** GALLERY V1 STYLES ****/
+	#work-detail-wrapper .item-wrapper .item .info-work{padding:25px 15px 50px 30px;}
+	#work-detail-wrapper .item-wrapper .item div#divThumbs{}
+	#work-detail-wrapper .item-wrapper .item .info-extended{display:none;}
+	#work-gal{font-size:.6em;}
+	#work-gal p{line-height:1.5em;width:400px;margin:10px 35px 0 0;}
+	#work-gal p a{text-decoration:none;text-transform:uppercase;font-size:.7em;padding:2px;color:#ffea00;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+	#work-gal h3{line-height:2em;}
+	#work-gal #pagination{margin-left:30px;}
+	
+	/**** GALLERY V2 STYLES ****/
+	.gal-v2 #work-detail-wrapper span#info-btn{right:23%;}
+	.gal-v2 #work-detail-wrapper #work-gallery .item-wrapper span#closebt{right:-10%;margin-right:100px;width:15px;height:15px;}
+	.gal-v2 #work-detail-wrapper #work-gallery .item .info-work #info{width:65%;;margin:5% 0 0 15%;}
+	.gal-v2 #work-detail-wrapper #work-gallery h3{font-size:3em;line-height:.9em;margin-bottom:5px;letter-spacing:0px;width:75%;}
+	.gal-v2 #work-detail-wrapper #work-gallery h4, #work-detail-wrapper #work-gallery h5{font-size:.9em;line-height:.8em;}
+	.gal-v2 #work-detail-wrapper #work-gallery h5{font-size:.8em;}
+	.gal-v2 #work-detail-wrapper #work-gallery .divider{margin-top:10px;}
+	.gal-v2 #work-detail-wrapper #work-gallery p{font-size:.75em;line-height:1.5em;margin:0px 0 0 0;}
+	.gal-v2 #work-detail-wrapper #work-gallery #pagination{margin:-5px 0 15px 0px;font-size:.9em;}
+	.gal-v2 div#divThumbs{display:none;}
+	
+	#up{visibility:hidden;}
+	#slideshow{max-height:100%;}
+	.gal-v2 #fdgNav{position:relative;margin:-40px auto 0 auto;}
+	.gal-v2 #fdgNav #keyboard-icon{display:none;}
+	
+	/**** GALLERY V2 STYLES ****/
+	.gal-v2 #work-detail-wrapper span#info-btn{right:31%;}
+	
+	/* SCROLLABLE AREAS
+	-------------------------------------*/
+	
+	/* Styles based in particular parts of the theme
+	--------------------------------------------------*/
+	#about .scrollable {width:100%;top:35px;left:0;height:85%;overflow:auto;}
+	#about .scrollable .content {width:100%;float:left;font-size:1em;line-height:1.7em;margin:15px auto 30px auto;}
+	#about .scrollable .content img{}
+	#about .section-intro{width:75%;margin: 15px auto 15px auto;}
+	#about .section-content {width:100%;}
+	
+	.gal-v1 .info-work .scrollable, .gal-v1 .info-work #scrollArea {width:77% !important;height:93px !important;overflow:auto;margin:7px 0 20px -3px;float:left;}
+	.gal-v1 .info-work .jspContainer {width:100% !important;height:200px !important;width:1500px\9;_width:1500px;*width:1500px;}
+	.gal-v1 .info-work .jspPane{width:93% !important;}
+	
+	.gal-v2 .info-work .scrollable {width:320px !important;height:85%;overflow:auto;}
+	.gal-v2 .info-work .jspContainer {width:320px !important;}
+	.gal-v2 .info-work .jspPane{width:85% !important;}
+	
+	.jspPane{width:100% !important;}
+	.jspContainer {width:100% !important;height:100%;}
+	
+	/*If touch device scroller is removed and the scrollable areas are smother for devices based in webkit engines*/
+	.info-work, .section-wrapper{overflow-y:scroll !important;*overflow-y:auto; position: relative;-webkit-overflow-scrolling: touch;min-width:100%;min-height:50%;top:30px;left:0;}
+	
+	/* Smartphones (portrait) ----------- */
+	@media only screen
+	and (max-width : 320px) {
+		
+	.wrapper-embed-video {width:235px !important;}
+	.video-container {width:235px;top:0px;}
+		
+	/*styles needed to remove the scroller and get a smooth scroll in iOS devices*/	
+	.scrollable {overflow:auto;*overflow-y:auto;-webkit-overflow-scrolling: touch;}
+	.jspVerticalBar {display:none;}
+	
+		/**** GALLERY V2 STYLES ****/
+	.gal-v2 #fdgNav{width:245px;position:relative;margin:0 auto;left:55px;bottom:20%;}
+	.gal-v2 #fdgNav span{float:left;width:30px;height:30px;}
+	.gal-v2 #fdgNav span#fdgPrev{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -2px -34px #000;}
+	.gal-v2 #fdgNav span#fdgPrev:hover{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -33px -34px #FFF;}
+	.gal-v2 #fdgNav span#fdgNext{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat 0 -1px #000;}
+	.gal-v2 #fdgNav span#fdgNext:hover{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -33px -1px #FFF;}
+	.gal-v2 #fdgNav span#fdgPrev.hide{opacity:.1;cursor:default;}
+	.gal-v2 #fdgNav span#fdgNext.hide{opacity:.1;cursor:default;}
+	.gal-v2 #fdgNav span#fdgInfo{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -1px -66px #FFF;}
+	.gal-v2 #fdgNav span#fdgInfo:hover{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -33px -65px #000;}
+	.gal-v2 #fdgNav span#fdgGoGrid{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -89px -1px #FFF;}
+	.gal-v2 #fdgNav span#fdgGoGrid:hover{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -62px -1px #000;}
+	.gal-v2 #fdgNav span#fdgSocial{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat 0 -99px #FFF;}
+	.gal-v2 #fdgNav span#fdgSocial:hover{background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -33px -99px #000;}
+	.gal-v2 #fdgNav #fdgSocialOptions{display:block;float:left;width:265px;height:39px;margin-top:10px;background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat 0 -157px;margin:-35px 0 0 -199px;display:none;}
+	.gal-v2 #fdgNav #fdgSocialOptions li{display:block;float:left;padding:10px 0 0 7px;}
+	.gal-v2 #fdgNav #fdgSocialOptions li a{display:block;text-indent:-99999px;}
+	.gal-v2 #fdgNav #fdgSocialOptions span{z-index:10;}
+	.gal-v2 #fdgNav #fdgSocialOptions span.info-btn{z-index:999999;}
+	.gal-v2 #fdgNav #fdgSocialOptions li .twitter-share-button{background:url(../images/social/twitter-icon.jpg) no-repeat;width:33px;height:19px;}
+	.gal-v2 #fdgNav #fdgSocialOptions li .fb-share-button{background:url(../images/social/fb_icon.jpg) no-repeat;width:45px;height:20px;}
+	.gal-v2 #fdgNav #fdgSocialOptions li .plus-share-button{background:url(../images/social/gplus-icon.jpg) no-repeat;width:31px;height:20px;}
+	.gal-v2 #fdgNav #fdgSocialOptions li .pin-share-button{background:url(../images/social/pinterest-icon.jpg) no-repeat;width:50px;height:19px;}
+	
+	.gal-v2 #work-detail-wrapper #work-gallery span#closebt{display:block;width:33px;height:33px;top:3%;right:0;margin-right:-50px;}
+	.gal-v2 #work-detail-wrapper #work-gallery span#closebt a{display:block;width:33px;height:33px;background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat 0 -130px #000;}
+	.gal-v2 #work-detail-wrapper #work-gallery span#closebt a:hover{background:url(../images/skins-items/sprite-gal-v2.png) no-repeat -47px -175px #FFF;}
+	
+	.thumb{width:50px;display:none;}
+	
+	/*Adjust a little the vertical centering for all the videos*/
+	.gal-v2 #work-detail-wrapper #work-gallery .video-container {margin-top:90px;}	
+	}
+	
+	/* Smartphones (landscape) ----------- */
+	@media only screen 
+	and (max-width : 480px) 
+	and (orientation : landscape) {
+		
+	.wrapper-embed-video {width:250px !important;}
+	.video-container {width:250px;top:0px;}
+		
+	/*styles needed to remove the scroller and get a smooth scroll in iOS devices*/	
+	.scrollable {overflow:auto;*overflow-y:auto;-webkit-overflow-scrolling: touch;}
+	.jspVerticalBar {display:none;}
+	
+	.gal-v2 #fdgNav{display:none;}
+	body#top-nav #slide-controls p {position: absolute;display: none;visibility: hidden;}
+	.gal-v2 ul#fdgSlides{top:19px;} 
+	.gal-v2 #work-detail-wrapper .item-wrapper .item #slideshow{padding-bottom:100px;}
+	.gal-v2 #work-detail-wrapper #work-gallery span#closebt{display:block;width:20px;height:20px;top:3%;right:0;margin-right:-50px;}
+	.gal-v2 #work-detail-wrapper #work-gallery span#closebt a{display:block;width:20px;height:20px;background:url(../images/skins-items/sprite-gal-v2-small.png) no-repeat -7px -136px #000;}
+	.gal-v2 #work-detail-wrapper #work-gallery span#closebt a:hover{background:url(../images/skins-items/sprite-gal-v2.png) no-repeat -47px -136px #FFF;} 
+	}

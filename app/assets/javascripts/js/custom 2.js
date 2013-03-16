@@ -146,7 +146,7 @@ $(function() {
 		tempHash = window.location.hash.substring(1);
 			if (prevHash == tempHash || prevHash == "") {
 						$mainContent.slideDown(750, function() {
-						var viewportHeight = $(window).height()*.6;
+						var viewportHeight = $(window).height();
 						$mainContent.height(viewportHeight);
 						$('html,body, #wrapper').animate({scrollTop: $("#work-detail-wrapper").offset().top-topSection}, "slow");
 						slideWorks();
@@ -166,7 +166,7 @@ $(function() {
 		tempHash = window.location.hash.substring(1);
 			if (prevHash == tempHash || prevHash == "") {
 					$mainContent.slideDown(500, function() {
-						var viewportHeight = $(window).height()*6;
+						var viewportHeight = $(window).height();
 						$mainContent.height(viewportHeight);
 						$('html,body, #wrapper').animate({scrollTop: $("#work-detail-wrapper").offset().top-topSection}, "slow");
 						slideWorks();
@@ -203,7 +203,7 @@ $(function() {
 				});
 				
         		$mainContent.slideDown(300, function() {
-					var viewportHeight = $(window).height()*.6;
+					var viewportHeight = $(window).height();
 					$mainContent.height(viewportHeight);
 	            });
 				
@@ -301,7 +301,7 @@ function fadeSection(){
 ********************************************************/
 var workWrapper = $('#work-detail-wrapper');
 function viewportHeight(){
-	return $(window).height()*.6;
+	return $(window).height();
 };
 function viewportWidth(){
 	return $(window).width();
@@ -434,12 +434,12 @@ if($('body').hasClass('gal-v2')){
 function centerGallery() {	
 	 	var wrapper = $("#work-detail-wrapper");
 		var theItem = $("#slideshow");
-		var contHeight = $(wrapper).height()*.6;
+		var contHeight = $(wrapper).height();
 		var contMiddle = contHeight/2;
 		var locMiddle = theItem.height()/2;
 		var theMiddle = contMiddle-locMiddle;
 
-			var wh = $("#work-detail-wrapper").height()*.6;
+			var wh = $("#work-detail-wrapper").height();
 			var ih = $('#slideshow').height();
 			
 			if (wh > ih) {
@@ -522,7 +522,7 @@ $('#filters-launcher').click(function(){
 	$('#filters').fadeIn(500);
 	$('#sections').fadeOut(500);
 	function altoScroll(){
-		return $('#work-detail-wrapper').height()*.6;
+		return $('#work-detail-wrapper').height();
 	};
 	$('html,body,#wrapper').animate({scrollTop: (donde) ? altoScroll() : 0}, 500);
 
@@ -553,7 +553,7 @@ $("#filter-menu a").click(function(e) {
 			return altoTopNav;
 		}
 		else{
-			return $('#work-detail-wrapper').height()*.6;
+			return $('#work-detail-wrapper').height();
 			}
 	
 	};
