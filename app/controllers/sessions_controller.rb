@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
         @userdes = UserDetail.find_by_user_id(user.id)
         session[:admin] = @userdes.admin
 
-        redirect_to root_url, notice: "Logged in"
+        redirect_to user_sites_url, notice: "Logged in"
 
         return
       end
