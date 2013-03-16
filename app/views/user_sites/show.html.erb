@@ -5,26 +5,26 @@
     
     <br />
     
-    <h4 style="text-align:center;">www.website.com</h4>
+    <h4 style="text-align:center;"><%= @user_site.site.url %></h4>
     
     <br />
     
     	<div class="info-work">
             <div id="info" class="scrollable">
-                <h3>www.Website.com</h3>
-                <h4>User: jramos</h4>
-                <h5>Email: jramos@uchicago.edu</h5>
-                <h5>Password: <a href="#">Change Password</a></h5>
+                <h3><%= @user_site.site.url %></h3>
+                <h4>User: <%= @user_site.username %></h4>
+                <h5>Email: </h5>
+                <h5>Password: <%= @user_site.password %><a href="#"><br />Change Password</a></h5>
                 <br />
-                <h5>Date: 02·25·2012</h5>
+                <h5>Date: <%= @user_site.updated_at %></h5>
                 <div class="divider">&nbsp;</div>
-                <p><a href="#">Launch Site Here</a></p>
+                <p><a href="http://www.<%= @user_site.site.url %>">Launch Site Here</a></p>
                 <p>If you need to make any changes to your private information for this account, please go to the <a href="#">Accounts page.</a></p>
           </div><!--end div#info-->
 		</div><!--end div.info-work-->
             	<div id="slideshow">
     		<ul id="fdgSlides">
-				<li><a href="#"><img src="/assets/sites/facebook.tiff" alt="picture" /></li>
+				<li><a href="#"><img src="/assets/sites/<%= @user_site.site.icon %>.jpg" alt="work-thumb-01" /></a></li>
 			</ul>
         </div><!--end slideshow-->
     
