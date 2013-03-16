@@ -11,27 +11,27 @@ User.create name: "user3", password: "user3"
 User.create name: "user4", password: "user4"
 User.create name: "user5", password: "user5"
 User.create name: "jeff", password: "hockey" 
-Site.create url: "amazon.com", icon: "amazon.tiff", script: 1
-Site.create url: "americanexpress.com", icon: "americanexpress.tiff", script: 2
-Site.create url: "catster.com", icon: "catster.tiff", script: 3
-Site.create url: "chase.com", icon: "chase.tiff", script: 4
-Site.create url: "comed.com", icon: "comed.tiff", script: 5
-Site.create url: "conedison.com", icon: "conedison.tiff", script: 6
-Site.create url: "dogster.com", icon: "dogster.tiff", script: 7
-Site.create url: "facebook.com", icon: "facebook.tiff", script: 8
-Site.create url: "grubhub.com", icon: "grubhub.tiff", script: 9
-Site.create url: "intuit.com", icon: "intuit.tiff", script: 10
-Site.create url: "netsuit.com", icon: "netsuite.tiff", script: 11
-Site.create url: "office.com", icon: "office.tiff", script: 12
-Site.create url: "salesforce.com", icon: "salesforce.tiff", script: 13
-Site.create url: "seamless.com", icon: "seamless.tiff", script: 14
-Site.create url: "staples.com", icon: "staples.tiff", script: 15
-Site.create url: "sugarcrm.com", icon: "sugarcrm.tiff", script: 16
-Site.create url: "twitter.com", icon: "twitter.tiff", script: 17
-Site.create url: "uber.com", icon: "uber.tiff", script: 18
-Site.create url: "vmware.com", icon: "vmware.tiff", script: 19
-Site.create url: "workday.com", icon: "workday.tiff", script: 20
-Site.create url: "workmarket.com", icon: "workmarket.tiff", script: 21
+Site.create url: "amazon.com", icon: "amazon", script: 1
+Site.create url: "americanexpress.com", icon: "americanexpress", script: 2
+Site.create url: "catster.com", icon: "catster", script: 3
+Site.create url: "chase.com", icon: "chase", script: 4
+Site.create url: "comed.com", icon: "comed", script: 5
+Site.create url: "conedison.com", icon: "conedison", script: 6
+Site.create url: "dogster.com", icon: "dogster", script: 7
+Site.create url: "facebook.com", icon: "facebook", script: 8
+Site.create url: "grubhub.com", icon: "grubhub", script: 9
+Site.create url: "intuit.com", icon: "intuit", script: 10
+Site.create url: "netsuit.com", icon: "netsuite", script: 11
+Site.create url: "office.com", icon: "office", script: 12
+Site.create url: "salesforce.com", icon: "salesforce", script: 13
+Site.create url: "seamless.com", icon: "seamless", script: 14
+Site.create url: "staples.com", icon: "staples", script: 15
+Site.create url: "sugarcrm.com", icon: "sugarcrm", script: 16
+Site.create url: "twitter.com", icon: "twitter", script: 17
+Site.create url: "uber.com", icon: "uber", script: 18
+Site.create url: "vmware.com", icon: "vmware", script: 19
+Site.create url: "workday.com", icon: "workday", script: 20
+Site.create url: "workmarket.com", icon: "workmarket", script: 21
 UserSite.create user_id: 1, site_id: 1, username: "test1u", password: "test1p"
 UserSite.create user_id: 2, site_id: 2, username: "test2u", password: "test2p"
 UserSite.create user_id: 3, site_id: 3, username: "test3u", password: "test3p"
