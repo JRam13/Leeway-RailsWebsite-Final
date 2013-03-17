@@ -37,6 +37,7 @@ class UserSitesController < ApplicationController
     @number = params[:id]
     session[:number] = params[:id]
     @number = params[:id]
+    @url = Site.find_by_id params[:id]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -57,17 +58,12 @@ class UserSitesController < ApplicationController
     @user_site.site_id = session[:number] 
     @number = session[:number] 
 
-    respond_to do |format|
-      if @user_site.save
-        format.html { redirect_to @user_site, notice: 'User site was successfully created.' }
-        format.json { render json: @user_site, status: :created, location: @user_site }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @user_site.errors, status: :unprocessable_entity }
-      end
-    end
+    @user_site.save
+       
+    
 
     session[:number] = nil
+    redirect_to user_sites_path
   end
 
   # PUT /user_sites/1

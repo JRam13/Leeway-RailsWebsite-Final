@@ -1,5 +1,43 @@
-<h1>New Site</h1>
+<div id="work-gallery" class="item-wrapper">
+    <span id="closebt" class="close-work-detail"><a href="">close</a></span>
+    
+    <div class="item">
+    
+    <br />
+    
+    <h4 style="text-align:center;">Account Information</h4><br />
+    <h5 style="text-align:center;"><%= @url.url %></h5><br />
+    <h5 style="text-align:center;"><%= render 'form' %></h5>
+    
+    <br />
+    
+    	
+            	
+    
+   
+</div>
+</div><!--end div.item-wrapper-->
 
-<%= render 'form' %>
+<script src="/assets/js/loadworks.js"></script>
+<script src="/assets/js/jquery.mousewheel.js"></script>
 
-<%= link_to 'Back', user_sites_path %>
+<script type="text/javascript">
+			$(window).load(function(){
+				$(function()
+				{
+					$('.scrollable').jScrollPane();
+				});
+			})
+			
+			$(function()
+				{
+					$('.scrollable').jScrollPane();
+			});
+			
+			$('.scrollable').hover(function(){
+					$(".jspVerticalBar").fadeIn("fast")
+				
+				}, function(){
+					$(".jspVerticalBar").fadeOut("fast")
+			})
+</script>
