@@ -54,6 +54,7 @@ class UserSitesController < ApplicationController
   def create
     @user_site = UserSite.new(params[:user_site])
     @user_site.user_id = session[:user_id]
+    @user_site.site_id = session[:number] 
     @number = session[:number] 
 
     respond_to do |format|
