@@ -34,6 +34,9 @@ class UserSitesController < ApplicationController
   # GET /user_sites/new.json
   def new
     @user_site = UserSite.new
+    @number = params[:id]
+    session[:number] = params[:id]
+    @number = params[:id]
 
     respond_to do |format|
       format.html # new.html.erb
@@ -51,6 +54,7 @@ class UserSitesController < ApplicationController
   def create
     @user_site = UserSite.new(params[:user_site])
     @user_site.user_id = session[:user_id]
+    @number = session[:number] 
 
     respond_to do |format|
       if @user_site.save
@@ -61,6 +65,8 @@ class UserSitesController < ApplicationController
         format.json { render json: @user_site.errors, status: :unprocessable_entity }
       end
     end
+
+    session[:number] = nil
   end
 
   # PUT /user_sites/1

@@ -11,10 +11,15 @@
     </div>
   <% end %>
 
+<% if @number == nil %>
+
   <div class="field">
     <%= f.label :site_id %><br />
     <%= f.collection_select :site_id, Site.all, :id, :url %>
   </div>
+
+<% end %>
+
   <div class="field">
     <%= f.label :username %><br />
     <%= f.text_field :username %>
