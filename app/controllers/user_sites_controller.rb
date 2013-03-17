@@ -37,6 +37,7 @@ class UserSitesController < ApplicationController
     @number = params[:id]
     session[:number] = params[:id]
     @number = params[:id]
+    @url = UserSite.find_by_id @number
 
     respond_to do |format|
       format.html # new.html.erb
