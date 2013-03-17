@@ -660,9 +660,9 @@ var ADAPT_CONFIG = {
   dynamic: true,
  
   range: [
-    '0px    to 449px  = mobile.css',
-    '459px  to 840px  = middle.css',
+    '0px    to 449px  = large.css',
+    '459px  to 840px  = large.css',
     '841px  to 1440px = large.css',
-    '1441px  		  = xlarge.css'
+    '1441px  		  = large.css'
   ]
 };

@@ -37,11 +37,11 @@ class UserSitesController < ApplicationController
     @number = params[:id]
     session[:number] = params[:id]
     @number = params[:id]
-<<<<<<< HEAD
+
     @url = UserSite.find_by_id @number
-=======
+
     @url = Site.find_by_id params[:id]
->>>>>>> de7b43aecf30bfec66e085390d973ada85e8c137
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -63,11 +63,7 @@ class UserSitesController < ApplicationController
     @number = session[:number] 
 
     @user_site.save
-<<<<<<< HEAD
-=======
-       
     
->>>>>>> de7b43aecf30bfec66e085390d973ada85e8c137
 
     session[:number] = nil
     redirect_to user_sites_path
