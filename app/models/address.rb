@@ -6,7 +6,7 @@ class Address < ActiveRecord::Base
 
   #validate :zip_5_valid
 
-  validates :address1, :presence => true
+  #validates :address1, :presence => true
 
   def all
     validates :number, :presence => true

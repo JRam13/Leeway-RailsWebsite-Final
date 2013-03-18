@@ -14,7 +14,9 @@
                 </ul>
             </div>
             
+            
             <div id="nav-options2">
+                <% if !session[:user_id] %>
             <h4 class="nav-section">Signed Out</h4>
         <div>
                     <ul id="">
@@ -26,6 +28,8 @@
 
                 </ul>
                  </div>
+                 <% end %>
+
                  <br />
                  <% if session[:user_id] %>
                  
@@ -33,6 +37,7 @@
                 <h4 class="nav-section">Signed In</h4>
         <div>
                     <ul id="">
+                        <li><a href="about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
                         <li><a href="/user_sites" class="none" title="SEO KEYWORDS">ACCOUNTS HUB</a></li>
                         <li><a href="/sites" class="none" title="SEO KEYWORDS">ADD ACCOUNTS</a></li>
                         <li><a href="users/<%= session[:user_id ] %>" class="none" title="SEO KEYWORDS">PROFILE</a></li>
