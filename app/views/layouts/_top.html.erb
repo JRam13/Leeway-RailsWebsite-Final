@@ -2,7 +2,7 @@
 <header id="top-title-bar"><figure><img src="/assets/images/top-bar.png" width="240" height="24" alt="SEO KEYWORDS"></figure></header>
 <div id="top-title-bar-sdevice"><figure><img src="/assets/images/top-bar-small.png" width="250" height="20" alt="SEO KEYWORDS"></figure></div>
 
-<nav id="main-nav" class="launcher">
+<nav id="main-nav" class="">
     <span id="tab-nav"><img src="/assets/images/transparent.png" alt="">&nbsp;</span>
     <div id="nav-menu">
             <div id="social-wrapper">
@@ -21,7 +21,7 @@
         <div>
                     <ul id="">
                         <li><a href="/sign_in" class="none" title="SEO KEYWORDS">SIGN IN</a></li>
-                        <li><a href="about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
+                        <li><a href="/about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
                         <li><a href="/contact.html" class="none" title="SEO KEYWORDS">CONTACT</a></li>
                         <br />
                         <li><a href="/users/new" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
@@ -37,13 +37,14 @@
                 <h4 class="nav-section">Signed In</h4>
         <div>
                     <ul id="">
-                        <li><a href="about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
                         <li><a href="/user_sites" class="none" title="SEO KEYWORDS">ACCOUNTS HUB</a></li>
-                        <li><a href="/sites" class="none" title="SEO KEYWORDS">ADD ACCOUNTS</a></li>
-                        <li><a href="users/<%= session[:user_id ] %>" class="none" title="SEO KEYWORDS">PROFILE</a></li>
-                        <li><a href="/contact.html" class="none" title="SEO KEYWORDS">CONTACT</a></li>
+                        <li><a href="sites" class="none" title="SEO KEYWORDS">ADD ACCOUNTS</a></li><br />
+                        <li><a href="/users/<%= session[:user_id ] %>" class="none" title="SEO KEYWORDS">PROFILE</a></li>
+                        <li><a class="close-work-detail" href="about" title="SEO KEYWORDS">ABOUT</a></li>
+                        <li><a href="contact" class="none" title="SEO KEYWORDS">CONTACT</a></li>
                         <br />
-                        <li><a href="sessions/destroy" class="none" title="SEO KEYWORDS">LOG OUT</a></li>
+                        <li><a href="/sessions/destroy" class="none" title="SEO KEYWORDS">LOG OUT</a></li>
+
                 </ul>
                  </div>
                  <% end %>

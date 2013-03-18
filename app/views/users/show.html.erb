@@ -61,31 +61,34 @@
 
     <div style="width: 980px; margin: 0 auto; padding: 90px 0 40px; font: 0.85em arial;">
 
-        <ul class="tabs" persist="true">
+        <ul class="tabs" persist="false">
 
-            <li><a href="#" rel="view1">Accounts</a></li>
+            
 
-            <li><a href="#" rel="view2">Credit Cards</a></li>
+            
 
-            <li><a href="#" rel="view3">Addresses</a></li>
+            <li><a href="#" rel="view1">Addresses</a></li>
 
-            <li><a href="#" rel="view4">Edit Information</a></li>
+            <li><a href="#" rel="view2">Edit Information</a></li>
+            <li><a href="#" rel="view3">Accounts</a></li>
+            <li><a href="#" rel="view4">Credit Cards</a></li>
             <li><a href="#" rel="view5">Delete Master Account</a></li>
 
         </ul>
 
         <div class="tabcontents">
 
-            <div id="view1" class="tabcontent">
+            <div id="view3" class="tabcontent">
 
                 <h3>Accounts</h3><br />
                 <% @int = 1 %>
                 <% @user.user_sites.each do |user_site| %>
 				  <tr>
-				    <td><%= @int %>. <%= user_site.site.url %></td>
+				    <td><p><%= @int %>. <strong><%= user_site.site.url %></strong></td>
 				    <% @int = @int + 1 %>
-				  </tr>
-				  <%= button_to "delete", user_site, :method=>:delete, :class=>:destroy %>
+				  
+				    <%= link_to "DELETE ACCOUNT", user_site, :method=>:delete, :class=>:destroy ,confirm: 'Are you sure?' %></p>
+          </tr>
 				  <br />
 				<% end %>
 				</table>
@@ -94,72 +97,57 @@
 
             </div>
 
-            <div id="view2" class="tabcontent">
+            <div id="view4" class="tabcontent">
 
-                <b>Credit Cards</b>
+                <h3>Credit Cards</h3><br />
 
-                <h1>My Credit Cards</h1>
-
-			<table>
-			  <tr>
-			    <th>Number</th>
-			    <th>Month</th>
-			    <th>Year</th>
-			    <th>Ccv</th>
-			    <th>Address</th>
-			    <th></th>
-			    <th></th>
-			    <th></th>
-			  </tr>
-
-			<% @user.credit_cards.each do |credit_card| %>
-			  <tr>
-			    <td><%= credit_card.number %></td>
-			    <td><%= credit_card.month %></td>
-			    <td><%= credit_card.year %></td>
-			    <td><%= credit_card.ccv %></td>
-			    <td><%= credit_card.address_id %></td>
-			    <td><%= link_to 'Show', credit_card %></td>
-			    <td><%= link_to 'Edit', edit_credit_card_path(credit_card) %></td>
-			    <td><%= link_to 'Destroy', credit_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-			  </tr>
-			<% end %>
-			</table>
+                <h4>Coming Soon</h4>
 
 			<br />
 
             </div>
 
-            <div id="view3" class="tabcontent">
+            <div id="view1" class="tabcontent">
 
-                <b>Addresses</b>
+                <h3>Addresses</h3><br />
 
 			    <% @user.addresses.each do |address| %>
 			  <tr>
-			    <td><%= address.address1 %></td>
-			    <td><%= address.address2 %></td>
-			    <td><%= address.city %></td>
-			    <td><%= address.state %></td>
-			    <td><%= address.country %></td>
-			    <td><%= address.zip5 %></td>
-			    <td><%= address.zip4 %></td>
-			    <td><%= address.phone %></td>
-			    <td><%= link_to 'Show', address %></td>
-			    <td><%= link_to 'Edit', edit_address_path(address) %></td>
-			    <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <p>Company name: 
+			    <strong><td><%= address.address1 %></td></strong><br />
+          Address:
+			    <strong><td><%= address.address2 %></td></strong><br />
+          City:
+          <strong>
+			    <td><%= address.city %></td></strong><br />
+          State:
+          <strong>
+			    <td><%= address.state %></td></strong><br />
+          Country:
+          <strong>
+			    <td><%= address.country %></td></strong><br />
+          Zip:
+          <strong>
+			    <td><%= address.zip5 %></td></strong><br />
+			    <td><%= link_to 'Edit Address', edit_address_path(address) %></td><br />
+          <hr />
 			  </tr>
 			<% end %>
 			</table>
 
             </div>
 
-            <div id="view4" class="tabcontent">
+            <div id="view2" class="tabcontent">
 
                
-				    <td><%= @user.user_details.last.fname %></td>
-				    <td><%= @user.user_details.last.lname %></td>
-				    <td><%= @user.user_details.last.email %></td>
-				    <td><%= link_to 'Edit', edit_user_detail_path(@user.user_details.last) %></td>
+             <h3>Personal Information</h3><br />
+              
+              <p>Name:  
+				    <strong><td><%= @user.user_details.last.fname %></td>
+				    <td><%= @user.user_details.last.lname %></td></strong><br />
+            Email: 
+				    <strong><td><%= @user.user_details.last.email %></td></strong><br />
+				    <td><%= link_to 'Edit Information', edit_user_detail_path(@user.user_details.last) %></td>
 				  </tr>
 				
 				</table>                
@@ -168,9 +156,13 @@
 
             <div id="view5" class="tabcontent">
 
-                <b>Delete Account</b>
+                <h3>Delete Account</h3>
 
                 <p>Please read before continuing</p>
+                <h4>You are about to delete your account. By clicking 'Delete Account', you will lose all access to your account.</h4><br />
+
+                <%= link_to "DELETE ACCOUNT", "/delete_account" , :confirm => 'Are you sure?' %>
+                
 
 
 

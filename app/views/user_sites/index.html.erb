@@ -2,14 +2,14 @@
 
     
     <div id="thumb-wrapper">
-        <section id="work-detail-wrapper" class="swipe">
+        <section id="work-detail-wrapper">
                 
         </section> <!--section#work-detail-wrapper-->
         
         <section id="works" class="work-launcher">
             <ul id="thumbs">
               <% @user_sites.each do |user_site| %>
-                <li class="thumb cat-<%= user_site.site.kind %>"><a href="user_sites/<%= user_site.id %>" title=""><img src="/assets/sites/<%= user_site.site.icon %>.jpg" alt="work-thumb-01" /></a></li>
+                <li class="thumb cat-<%= user_site.site.kind %>"><a href="user_sites/<%= user_site.id %>" title=""><img src="/assets/logos/<%= user_site.site.icon %>.jpg" alt="work-thumb-01" /></a></li>
                 <% end %>
                 
             </ul>

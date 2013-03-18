@@ -57,7 +57,7 @@ class UsersController < ApplicationController
     @user.save
 
     @address = Address.new()
-    @address.address1 = params[:company]
+    @address.address1 = params[:address1]
     @address.address2 = params[:address2]
     @address.city = params[:city]
     @address.state = params[:state]
