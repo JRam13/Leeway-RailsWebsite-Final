@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_filter :authorize_user, :only => [:show, :edit, :update, :destroy]
+  #before_filter :authorize_user, :only => [:show, :edit, :update, :destroy]
   
   def authorize_user
     @user = User.find(params[:id])

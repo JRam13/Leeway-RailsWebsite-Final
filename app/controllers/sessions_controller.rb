@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if user.present?
       if user.authenticate(params[:password])
         session[:user_id] = user.id
+        session[:id] = user.id
 
         @userdes = UserDetail.find_by_user_id(user.id)
         session[:admin] = @userdes.admin
@@ -27,7 +28,10 @@ class SessionsController < ApplicationController
 
   def delete_account
     @u = User.find_by_id(session[:user_id].to_i)
+<<<<<<< HEAD
 
+=======
+>>>>>>> f19b899844638a0780816c63338aafe857665cfe
     @u.password = "verdsfserbsdfaserdvwefsdfasdfjals;dkfjasodifwer"+Random.rand(100000).to_s
     @u.save
     #reset_session
