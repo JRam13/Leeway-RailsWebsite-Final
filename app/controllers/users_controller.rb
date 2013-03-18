@@ -54,6 +54,7 @@ class UsersController < ApplicationController
     @user = User.new()
     @user.name = params[:name]
     @user.password = params[:password]
+    @user.save
 
     @address = Address.new()
     @address.address1 = params[:company]
@@ -61,15 +62,17 @@ class UsersController < ApplicationController
     @address.city = params[:city]
     @address.state = params[:state]
     @address.zip5 = params[:zip5]
+    @address.user_id = @user.id
 
     @userdetail = UserDetail.new()
     @userdetail.fname = params[:fname]
     @userdetail.lname = params[:lname]
     @userdetail.email = params[:email]
+    @userdetail.user_id = @user.id
     
     Mailer.confirm().deliver
     respond_to do |format|
-      if @user.save # && @address.save && @userdetail.save
+      if (@user.save and @userdetail.save and @address.save)
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
