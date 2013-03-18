@@ -15,6 +15,9 @@ OneWayAir::Application.routes.draw do
   get "user_sites/new/:id" => 'user_sites#new'
   get "delete_account" => 'sessions#delete_account'
 
+  get "about" => 'statics#about'
+  get "contact" => 'statics#contact'
+
   root to: 'sessions#new'
 
 end
