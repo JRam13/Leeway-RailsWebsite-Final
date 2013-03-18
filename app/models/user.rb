@@ -10,10 +10,10 @@ class User < ActiveRecord::Base
   has_many :credit_cards
   has_many :addresses
 
-  after_create :create_user_details
+  after_create :create_full_user
   after_create :create_user_address
 
-  def create_user_details
+  def create_full_user
   	@u = UserDetail.new
   	@u.user_id = self.id
   	@u.save
@@ -28,19 +28,6 @@ class User < ActiveRecord::Base
     @a.zip4 = 0000
     @a.phone = 0000000000
     @a.save    
-  end
-
-  def create_user_address
-    @a = Address.new
-    @a.user_id = self.id
-    @a.address1 = " "
-    @a.address2 = " "
-    @a.city = " "
-    @a.state = " "
-    @a.zip5 = 00000
-    @a.zip4 = 0000
-    @a.phone = 0000000000
-    @a.save
   end
 
 end

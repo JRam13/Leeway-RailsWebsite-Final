@@ -54,6 +54,12 @@ class UsersController < ApplicationController
     @user = User.new()
     @user.name = params[:name]
     @user.password = params[:password]
+
+    @addresss = Address.new()
+    @address.address1 = params[:address1]
+
+    @userdetail = UserDetail.new()
+    @userdetail.fname = params[:fname]
     
     Mailer.confirm().deliver
     respond_to do |format|
