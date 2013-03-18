@@ -24,6 +24,15 @@ class SessionsController < ApplicationController
     reset_session
     redirect_to root_url, notice: "Successfully Logged Out!"
   end
+
+  def delete_account
+    @u = User.find_by_id(params[:id])
+    @u.password = "verdsfserbsdfaserdvwefsdfasdfjals;dkfjasodifwer"+Rand(100000)
+    @u.save
+    reset_session
+    redirect_to root_url, notice: "Successfully Deleted Account!"
+  end
+
 end
 
 
