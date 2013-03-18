@@ -17,6 +17,17 @@ class User < ActiveRecord::Base
   	@u = UserDetail.new
   	@u.user_id = self.id
   	@u.save
+
+    @a = Address.new
+    @a.user_id = self.id
+    @a.address1 = " "
+    @a.address2 = " "
+    @a.city = " "
+    @a.state = " "
+    @a.zip5 = 00000
+    @a.zip4 = 0000
+    @a.phone = 0000000000
+    @a.save    
   end
 
   def create_user_address

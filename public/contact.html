@@ -56,12 +56,12 @@
             </div>
             
             <div id="nav-options2">
-            <h4 class="nav-section">Leeway</h4>
+            <h4 class="nav-section">Signed Out</h4>
         <div>
                     <ul id="">
-                        <li><a href="index.html" class="none" title="SEO KEYWORDS">HOME</a></li>
+                        <li><a href="/sign_in" class="none" title="SEO KEYWORDS">HOME</a></li>
                         <li><a href="about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
-                        <li><a href="signup.html" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
+                        <li><a href="/users/new" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
                         <li><a href="#" class="none" title="SEO KEYWORDS">CONTACT</a></li>
                 </ul>
                  </div>
@@ -69,9 +69,9 @@
                 <h4 class="nav-section">Signed In</h4>
         <div>
                     <ul id="">
-                        <li><a href="index.html" class="none" title="SEO KEYWORDS">ACCOUNTS HUB</a></li>
-                        <li><a href="about.html" class="none" title="SEO KEYWORDS">MANAGE ACCOUNT</a></li>
-                        <li><a href="signup.html" class="none" title="SEO KEYWORDS">PROFILE</a></li>
+                        <li><a href="/user_sites" class="none" title="SEO KEYWORDS">ACCOUNTS HUB</a></li>
+                        <li><a href="/sites" class="none" title="SEO KEYWORDS">ADD ACCOUNTS</a></li>
+                        <li><a href="users/<%= session[:user_id ] %>" class="none" title="SEO KEYWORDS">PROFILE</a></li>
                         <li><a href="#" class="none" title="SEO KEYWORDS">CONTACT</a></li>
                         <br />
                         <li><a href="sessions/destroy" class="none" title="SEO KEYWORDS">LOG OUT</a></li>
@@ -154,65 +154,43 @@
 
 
 
-  <div id="slider2">
-    <h2>About Us</h2>
+ <div id="slider2">
+    <h2>Contact Us</h2>
   </div>
   <div class="clr"></div>
   <div class="body">
     <div class="body_resize">
       <div class="right">
-        <h2>What We Do<span></span></h2>
-        <img src="/assets/images/about_1.jpg" alt="picture" width="616" height="148" />
+        <h2>Send Us A Message</h2>
+        <img src="/assets/images/map.jpg" alt="picture" width="616" height="148" />
         <div class="clr"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id tristique sem. Nunc nec ipsum sed nisi dictum mollis. Praesent malesuada mauris a odio adipiscing mollis. In varius tincidunt elit vitae eleifend. <br />
           Etiam fermentum suscipit est vel aliquet. Quisque malesuada luctus dignissim bibendum a lobortis mauris placerat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nulla id orci tincidunt hendrerit et a nisl. Quisque tristique diam quis dolor cursus congue. In dapibus ante at odio dictum eget ornare odio fringilla. Nulla sem mi, dictum at laoreet in, auctor eget sem. Vivamus vitae nibh tortor. In turpis tellus, pellentesque sit amet auctor ut, dapibus eu libero. Vestibulum non quam elit, et placerat ante. Nunc nulla massa, adipiscing ac ultrices in, aliquet sit amet dolor. Cras elementum nunc vel lorem porta scelerisque. Vestibulum bibendum ipsum eu tellus scelerisque tempor. </p>
-        <h2>Internet Marketing</h2>
-        <img src="/assets/images/about_2.jpg" alt="picture" width="231" height="193" style="float:left; margin:0 10px 0 0;" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id tristique sem. Nunc nec ipsum sed nisi dictum mollis. Praesent malesuada mauris a odio adipiscing mollis. In varius tincidunt elit vitae eleifend. <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nulla id orci tincidunt hendrerit et a nisl. Quisque tristique diam quis dolor cursus congue. In dapibus ante at odio dictum eget ornare odio fringilla. Nulla sem mi, dictum at laoreet in, auctor eget sem. </p>
+        <h3>Contact Form</h3>
+        
+        <p><strong>Coming Soon</strong></p>
+
       </div>
       <div class="left">
-        <h2>Testimonial</h2>
-        <img src="/assets/images/test.gif" alt="picture" width="36" height="28" class="floated" />
+        <h2>Contact Details</h2>
         <div class="clr"></div>
-        <p>" Nunc nec ipsum sed nisi dictum mollis. Praesent malesuada mauris a odio adipiscing mollis. In varius tincidunt elit vitae eleifend. Etiam fermentum suscipit est vel aliquet. "</p>
+        <p>Address:<br />
+          901 12th Avenue, P.O. Box 222000<br />
+          Seattle, WA 98122-1090</p>
         <div class="bg"></div>
-        <a href="#"><img src="/assets/images/test_img.gif" alt="picture" width="38" height="37" border="0" class="floated" style="padding:10px 20px 0 0;" /></a>
-        <p style="padding:10px 20px 0 20px;"><strong>John Doe, <br />
-          Creative Director of Website.com</strong></p>
-        <img src="/assets/images/r_bg.gif" alt="picture" width="293" height="8" class="floated" /> <img src="/assets/images/test.gif" alt="picture" width="36" height="28" class="floated" />
-        <div class="clr"></div>
-        <p>" Nunc nec ipsum sed nisi dictum mollis. Praesent malesuada mauris a odio adipiscing mollis. In varius tincidunt elit vitae eleifend. Etiam fermentum suscipit est vel aliquet. "</p>
+        <p>Telephone: +1 959 603 6035<br />
+          FAX: +1 504 889 9898<br />
+          E-mail: mail@companyname.com<br />
+          Website: www.yoursitename.com</p>
         <div class="bg"></div>
-        <a href="#"><img src="/assets/images/test_img.gif" alt="picture" width="38" height="37" border="0" class="floated" style="padding:10px 20px 0 0;" /></a>
-        <p style="padding:10px 20px 0 20px;"><strong>John Doe, <br />
-          Creative Director of Website.com</strong></p>
-        <img src="/assets/images/r_bg.gif" alt="picture" width="293" height="8" class="floated" /> </div>
+        <p>Quisque malesuada luctus dignissim bibendum a lobortis mauris placerat.</p>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <br />
+          Nulla consequat massa quis enim.</p>
+        <img src="images/r_bg.gif" alt="picture" width="293" height="8" class="floated" /></div>
       <div class="clr"></div>
     </div>
   </div>
   <div class="clr"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

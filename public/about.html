@@ -56,12 +56,12 @@
             </div>
             
             <div id="nav-options2">
-            <h4 class="nav-section">Leeway</h4>
+            <h4 class="nav-section">Signed Out</h4>
         <div>
                     <ul id="">
-                        <li><a href="index.html" class="none" title="SEO KEYWORDS">HOME</a></li>
+                        <li><a href="/sign_in" class="none" title="SEO KEYWORDS">HOME</a></li>
                         <li><a href="about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
-                        <li><a href="signup.html" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
+                        <li><a href="/users/new" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
                         <li><a href="#" class="none" title="SEO KEYWORDS">CONTACT</a></li>
                 </ul>
                  </div>
@@ -69,9 +69,9 @@
                 <h4 class="nav-section">Signed In</h4>
         <div>
                     <ul id="">
-                        <li><a href="index.html" class="none" title="SEO KEYWORDS">ACCOUNTS HUB</a></li>
-                        <li><a href="about.html" class="none" title="SEO KEYWORDS">MANAGE ACCOUNT</a></li>
-                        <li><a href="signup.html" class="none" title="SEO KEYWORDS">PROFILE</a></li>
+                        <li><a href="/user_sites" class="none" title="SEO KEYWORDS">ACCOUNTS HUB</a></li>
+                        <li><a href="/sites" class="none" title="SEO KEYWORDS">ADD ACCOUNTS</a></li>
+                        <li><a href="users/<%= session[:user_id ] %>" class="none" title="SEO KEYWORDS">PROFILE</a></li>
                         <li><a href="#" class="none" title="SEO KEYWORDS">CONTACT</a></li>
                         <br />
                         <li><a href="sessions/destroy" class="none" title="SEO KEYWORDS">LOG OUT</a></li>
