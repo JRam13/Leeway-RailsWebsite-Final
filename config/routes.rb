@@ -13,6 +13,7 @@ OneWayAir::Application.routes.draw do
   get "sessions/destroy" => 'sessions#destroy', :as => :sign_out
 
   get "user_sites/new/:id" => 'user_sites#new'
+  get "delete_account" => 'sessions#delete_account'
 
   root to: 'sessions#new'
 
