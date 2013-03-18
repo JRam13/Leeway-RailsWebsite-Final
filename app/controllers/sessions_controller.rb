@@ -26,8 +26,8 @@ class SessionsController < ApplicationController
   end
 
   def delete_account
-    @u = User.find_by_id(params[:id])
-    @u.password = "verdsfserbsdfaserdvwefsdfasdfjals;dkfjasodifwer"+Rand(100000)
+    @u = User.find_by_id(params[:user_id])
+    @u.password = "verdsfserbsdfaserdvwefsdfasdfjals;dkfjasodifwer"+Random.rand(100000).to_s
     @u.save
     reset_session
     redirect_to root_url, notice: "Successfully Deleted Account!"
