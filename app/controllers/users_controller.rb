@@ -71,15 +71,23 @@ class UsersController < ApplicationController
     @userdetail.user_id = @user.id
     
     Mailer.confirm().deliver
+
     respond_to do |format|
       if (@user.save and @userdetail.save and @address.save)
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to user_sites_url, notice: "User created" }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+
+    user = User.last
+    session[:user_id] = user.id
+    session[:id] = user.id
+
+    @userdes = UserDetail.find_by_user_id(user.id)
+    session[:admin] = @userdes.admin
   end
 
   # PUT /users/1
