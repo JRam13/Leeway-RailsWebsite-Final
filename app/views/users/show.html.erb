@@ -1,3 +1,202 @@
+<%= render '/layouts/top' %>
+
+
+<div id="slider2">
+    <h2><%= @user.user_details.last.fname %> <%= @user.user_details.last.lname %></h2>
+  </div>
+  <div class="clr"></div>
+  <div class="body">
+    <div class="body_resize">
+      <div class="bigbody">
+      	<h2>Profile</h2>
+      	<div class="image">
+            <img src="/assets/images/hlaurie.jpg" alt="picture" width="175" height="175" />
+            <div class="clr"></div>
+        </div>
+        <div class="about">
+        	<h3>About:</h3>
+            <div class="about1">
+            	<p style="text-align:right;">Name:<br />
+           	    Company:<br />
+           	    ACC Number:<br />
+           	    Age:<br />
+           	    Gender:
+            	</p>
+          </div>
+<div class="about2">
+           	<p style="text-align:left;"><strong><%= @user.user_details.last.fname %> <%= @user.user_details.last.lname %></strong><br />
+       	    <strong><%= @user.addresses.last.address1 %></strong><br />
+            <strong>#000<%= @user.id %></strong><br />
+       	    <strong>27</strong> <br />
+            <strong>Male</strong></p>
+</div>
+        
+        </div>
+    <div class="contact">
+        	<h3>Contact Information:</h3>
+            <div class="contact1">
+            	<p style="text-align:right;">Telephone:<br />
+            	  Street Address:<br />
+            	  City:<br />
+            	  Zip Code:<br />
+            	E-mail:</p>
+</div>
+            <div class="contact2">
+            	<p style="text-align:left;"><strong><%= @user.addresses.last.phone %></strong><br />
+                <strong><%= @user.addresses.last.address2 %></strong><br />
+                <strong><%= @user.addresses.last.city %>, <%= @user.addresses.last.state %></strong><br />
+                <strong><%= @user.addresses.last.zip5 %></strong><br />
+                <strong><%= @user.user_details.last.email %></strong><br /></p>
+            </div>
+        </div>
+      </div>
+      <div class="clr"></div>
+      <div class="bigbody">
+      <br />
+      	<h2>Account Information</h2>
+      </div>
+      
+      
+        <div style="background:#F6F9FC;">
+
+    <div style="width: 980px; margin: 0 auto; padding: 90px 0 40px; font: 0.85em arial;">
+
+        <ul class="tabs" persist="true">
+
+            <li><a href="#" rel="view1">Accounts</a></li>
+
+            <li><a href="#" rel="view2">Credit Cards</a></li>
+
+            <li><a href="#" rel="view3">Addresses</a></li>
+
+            <li><a href="#" rel="view4">Edit Information</a></li>
+            <li><a href="#" rel="view5">Delete Master Account</a></li>
+
+        </ul>
+
+        <div class="tabcontents">
+
+            <div id="view1" class="tabcontent">
+
+                <h3>Accounts</h3><br />
+                <% @int = 1 %>
+                <% @user.user_sites.each do |user_site| %>
+				  <tr>
+				    <td><%= @int %>. <%= user_site.site.url %></td>
+				    <br />
+				    <% @int = @int + 1 %>
+				  </tr>
+				<% end %>
+				</table>
+
+                
+
+            </div>
+
+            <div id="view2" class="tabcontent">
+
+                <b>Credit Cards</b>
+
+                <h1>My Credit Cards</h1>
+
+			<table>
+			  <tr>
+			    <th>Number</th>
+			    <th>Month</th>
+			    <th>Year</th>
+			    <th>Ccv</th>
+			    <th>Address</th>
+			    <th></th>
+			    <th></th>
+			    <th></th>
+			  </tr>
+
+			<% @user.credit_cards.each do |credit_card| %>
+			  <tr>
+			    <td><%= credit_card.number %></td>
+			    <td><%= credit_card.month %></td>
+			    <td><%= credit_card.year %></td>
+			    <td><%= credit_card.ccv %></td>
+			    <td><%= credit_card.address_id %></td>
+			    <td><%= link_to 'Show', credit_card %></td>
+			    <td><%= link_to 'Edit', edit_credit_card_path(credit_card) %></td>
+			    <td><%= link_to 'Destroy', credit_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			  </tr>
+			<% end %>
+			</table>
+
+			<br />
+
+            </div>
+
+            <div id="view3" class="tabcontent">
+
+                <b>Addresses</b>
+
+			    <% @user.addresses.each do |address| %>
+			  <tr>
+			    <td><%= address.address1 %></td>
+			    <td><%= address.address2 %></td>
+			    <td><%= address.city %></td>
+			    <td><%= address.state %></td>
+			    <td><%= address.country %></td>
+			    <td><%= address.zip5 %></td>
+			    <td><%= address.zip4 %></td>
+			    <td><%= address.phone %></td>
+			    <td><%= link_to 'Show', address %></td>
+			    <td><%= link_to 'Edit', edit_address_path(address) %></td>
+			    <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			  </tr>
+			<% end %>
+			</table>
+
+            </div>
+
+            <div id="view4" class="tabcontent">
+
+               
+				    <td><%= @user.user_details.last.fname %></td>
+				    <td><%= @user.user_details.last.lname %></td>
+				    <td><%= @user.user_details.last.email %></td>
+				    <td><%= link_to 'Edit', edit_user_detail_path(@user.user_details.last) %></td>
+				  </tr>
+				
+				</table>                
+
+            </div>
+
+            <div id="view5" class="tabcontent">
+
+                <b>Delete Account</b>
+
+                <p>Please read before continuing</p>                
+
+            </div>
+
+        </div>
+        </p>
+
+    </div>
+
+</div>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+  <div class="clr"></div>
+
+
+
+
+<%= render '/layouts/bottom' %>
+
+
+
+
+<!--
 <p id="notice"><%= notice %></p>
 
 <h2>Profile for <%= @user.name %></h2>
@@ -15,3 +214,4 @@ Your Addresses:<br>
 <br>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+-->
