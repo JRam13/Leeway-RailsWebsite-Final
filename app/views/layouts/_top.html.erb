@@ -18,13 +18,18 @@
             <h4 class="nav-section">Signed Out</h4>
         <div>
                     <ul id="">
-                        <li><a href="/sign_in" class="none" title="SEO KEYWORDS">HOME</a></li>
+                        <li><a href="/sign_in" class="none" title="SEO KEYWORDS">SIGN IN</a></li>
                         <li><a href="about.html" class="none" title="SEO KEYWORDS">ABOUT</a></li>
-                        <li><a href="/users/new" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
                         <li><a href="/contact.html" class="none" title="SEO KEYWORDS">CONTACT</a></li>
+                        <br />
+                        <li><a href="/users/new" class="none" title="SEO KEYWORDS">SIGN UP</a></li>
+
                 </ul>
                  </div>
                  <br />
+                 <% if session[:user_id] %>
+                 
+
                 <h4 class="nav-section">Signed In</h4>
         <div>
                     <ul id="">
@@ -36,6 +41,7 @@
                         <li><a href="sessions/destroy" class="none" title="SEO KEYWORDS">LOG OUT</a></li>
                 </ul>
                  </div>
+                 <% end %>
               </div>
               
               
@@ -54,6 +60,7 @@
                     <span><a href="#" class="btn-back-sections close-sub" id="close-filters" title="SEO KEYWORDS">Back menu &rarr;</a></span>
               </div>
                 
+                <% if session[:user_id] %>
                 <div id="sections">
                     <h4 class="nav-section">Sections</h4>
                     <ul id="nav-sections">
@@ -62,6 +69,7 @@
                         <li><a href="#" title="SEO KEYWORDS">NEWS</a></li>
                     </ul>
                 </div>
+                <% end %>
    
              </div><!--end div#nav-options-->
         </div>
@@ -114,5 +122,3 @@
 
 
 <%= yield %>
-
-
