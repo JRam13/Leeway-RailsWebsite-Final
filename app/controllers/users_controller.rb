@@ -69,7 +69,7 @@ class UsersController < ApplicationController
     
     Mailer.confirm().deliver
     respond_to do |format|
-      if @user.save
+      if @user.save # && @address.save && @userdetail.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else

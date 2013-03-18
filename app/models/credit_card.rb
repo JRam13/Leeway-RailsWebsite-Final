@@ -3,7 +3,7 @@ class CreditCard < ActiveRecord::Base
   belongs_to :user
   belongs_to :address
 
-  before_validation :all
+  #before_validation :all
 
   def all
     validates :number, :presence => true
