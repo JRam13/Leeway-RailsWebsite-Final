@@ -63,12 +63,14 @@ class UsersController < ApplicationController
     @address.state = params[:state]
     @address.zip5 = params[:zip5]
     @address.user_id = @user.id
+    @address.save
 
     @userdetail = UserDetail.new()
     @userdetail.fname = params[:fname]
     @userdetail.lname = params[:lname]
     @userdetail.email = params[:email]
     @userdetail.user_id = @user.id
+    @userdetail.save
     
     Mailer.confirm().deliver
 
