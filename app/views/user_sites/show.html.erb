@@ -14,7 +14,7 @@
                 <h3><%= @user_site.site.url %></h3>
                 <h4>User: <%= @user_site.username %></h4>
                 <h5>Email: </h5>
-                <h5>Password: <%= @user_site.password %><a href="#"><br />Change Password</a></h5>
+                <h5>Password: <%= @user_site.password %><a href="/users/<%= session[:user_id ] %>"><br />Manage Account</a></h5>
                 <br />
                 <h5>Date: <%= @user_site.updated_at %></h5>
                 <div class="divider">&nbsp;</div>

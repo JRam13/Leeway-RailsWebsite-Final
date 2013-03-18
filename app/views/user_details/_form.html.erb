@@ -1,3 +1,59 @@
+
+<div id="slider2">
+    <h2>Personal Information</h2>
+  </div>
+  <div class="clr"></div>
+  <div class="body">
+    <div class="body_resize">
+      <div class="right">
+        <form action="#" method="post" id="signup">
+          <ol>
+
+            <li>
+             <label for="fname">First Name</label>
+            </li>
+            <li>
+              <input id="fname" name="fname" class="smallfield" value="<%= @user_detail.fname %>"/>
+            </li>
+            <li>
+             <label for="lname">Last Name</label>
+            </li>
+            <li>
+              <input id="lname" name="lname" class="smallfield" value="<%= @user_detail.lname %>"/>
+            </li>
+            <li>
+              <label for="email">Email</label>
+            </li>
+            <li>
+              <input id="email" name="email" class="smallfield" value="<%= @user_detail.email %>"/>
+            </li>
+            
+            
+
+            <li class="buttons">
+              <input type="image" name="imageField" id="imageField" src="/assetsimages/submit.png" class="send" />
+              <div class="clr"></div>
+            </li>
+            
+            
+            
+            
+            
+            
+              <div class="clr"></div>
+            </li>
+          </ol>
+        </form>
+        
+    </div>
+  </div>
+  <div class="clr"></div>
+
+
+
+
+
+<!--
 <%= form_for(@user_detail) do |f| %>
   <% if @user_detail.errors.any? %>
     <div id="error_explanation">
