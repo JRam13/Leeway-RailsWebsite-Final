@@ -35,12 +35,12 @@ html { padding:0; margin:0;}
 /* body */
 .body_resize { width:980px; margin:0 auto; padding:0;}
 .body { padding:10px 0; margin:0 auto; background:#fff; border-top:1px solid #e2e2e2;}
-.body h2 { font: normal 24px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#494949; padding:10px 0; margin:0 0 10px 0; border-bottom:1px solid #dfdfdf;}
+.body h2 { font: normal 24px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#494949; width:980px; padding:10px 0; margin:0 0 10px 0; border-bottom:1px solid #dfdfdf;}
 .body h3 { color:#27619c; font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif; border-bottom:1px solid #dbdbdb; padding:15px 0; margin:0; }
 .body .menu2 { width:170px; float:right; padding:0; margin:0;}
 .body .menu2 a { font: bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#5d5d5d; text-decoration:none;}
 .body .menu2 a:hover { color:#27619c; text-decoration:underline;}
-.body p { font:normal 12px Arial, Helvetica, sans-serif; color:#979797; line-height:1.8em; padding:10px 0; margin:0;}
+.body p { font:normal 12px Arial, Helvetica, sans-serif; color:#979797; line-height:23px; padding:10px 0; margin:0;}
 .body strong { font:normal 14px Arial, Helvetica, sans-serif; color:#333; line-height:1.5em; padding:10px 0; margin:10px; }
 .body a { color:#618bb6; text-decoration:none;}
 .body img { margin:5px auto; padding:5px; border:1px solid #e9e9e9; background:#f8f8f8;}

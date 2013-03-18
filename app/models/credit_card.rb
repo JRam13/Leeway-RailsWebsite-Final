@@ -3,17 +3,17 @@ class CreditCard < ActiveRecord::Base
   belongs_to :user
   belongs_to :address
 
-  before_validation :sanitize_card_number
+  # #before_validation :sanitize_card_number
 
-  def sanitize_card_number
-    self.number = self.number.to_s.gsub('-','')
-  end
+  # def sanitize_card_number
+  #   self.number = self.number.to_s.gsub('-','')
+  # end
 
-  validate :require_visa_card
+  # #validate :require_visa_card
 
-  def require_visa_card
-    unless self.number.to_s.starts_with?("4") && self.number.to_s.length == 16
-      errors.add(:credit_card, "Card must be a Visa card")
-    end
-  end
+  # def require_visa_card
+  #   unless self.number.to_s.length == 16
+  #     errors.add(:credit_card, "Card must be a Visa card")
+  #   end
+  # end
 end
