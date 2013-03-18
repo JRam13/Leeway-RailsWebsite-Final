@@ -126,7 +126,7 @@ $(function() {
 		
 		tempHash = window.location.hash.substring(1);
 			if (prevHash == tempHash || prevHash == "") {
-					$('#wrapper').animate({scrollTop: $("#work-detail-wrapper").offset().top-topSection},'slow');
+					$('html,body, #wrapper').animate({scrollTop: $("#work-detail-wrapper").offset().top-topSection},'slow');
 				}
 				
         if ( $.browser.msie ) {
