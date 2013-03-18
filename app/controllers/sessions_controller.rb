@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if user.present?
       if user.authenticate(params[:password])
         session[:user_id] = user.id
+        session[:id] = user.id
 
         @userdes = UserDetail.find_by_user_id(user.id)
         session[:admin] = @userdes.admin
