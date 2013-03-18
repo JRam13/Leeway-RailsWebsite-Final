@@ -83,9 +83,10 @@
                 <% @user.user_sites.each do |user_site| %>
 				  <tr>
 				    <td><%= @int %>. <%= user_site.site.url %></td>
-				    <br />
 				    <% @int = @int + 1 %>
 				  </tr>
+				  <%= button_to "delete", user_site, :method=>:delete, :class=>:destroy %>
+				  <br />
 				<% end %>
 				</table>
 
@@ -169,7 +170,9 @@
 
                 <b>Delete Account</b>
 
-                <p>Please read before continuing</p>                
+                <p>Please read before continuing</p>
+
+
 
             </div>
 
