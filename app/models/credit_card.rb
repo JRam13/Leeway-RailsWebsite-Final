@@ -3,6 +3,12 @@ class CreditCard < ActiveRecord::Base
   belongs_to :user
   belongs_to :address
 
+  before_validation :all
+
+  def all
+    validates :number, :presence => true
+  end
+
   # #before_validation :sanitize_card_number
 
   # def sanitize_card_number

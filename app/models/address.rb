@@ -6,6 +6,13 @@ class Address < ActiveRecord::Base
 
   #validate :zip_5_valid
 
+  validates :address1, :presence => true
+
+  def all
+    validates :number, :presence => true
+  end
+
+
   def zip_5_valid
     unless self.zip5.to_s.length == 5
       errors.add(:zip5, "Zip Code Must Be 5 Digits")
