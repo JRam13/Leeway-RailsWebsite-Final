@@ -69,6 +69,9 @@ class AddressesController < ApplicationController
     @address = Address.find(params[:id])
     @address.user_id = session[:user_id]
 
+    @address.phone = params[:phone]
+
+
     respond_to do |format|
       if @address.update_attributes(params[:address])
         format.html { redirect_to @address, notice: 'Address was successfully updated.' }
