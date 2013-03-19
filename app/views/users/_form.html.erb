@@ -54,7 +54,9 @@
               <label for="name">User Name</label>
           </li>
           <li>
+            <% if @user.errors.messages.keys.include?(:name) %>
               <input id="name" name="name" class="smallfield" />
+            <% end %>
             </li>
           <li>
               <label for="password">Password</label>
