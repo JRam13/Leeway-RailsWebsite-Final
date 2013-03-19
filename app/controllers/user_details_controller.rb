@@ -65,7 +65,7 @@ class UserDetailsController < ApplicationController
   # PUT /user_details/1
   # PUT /user_details/1.json
   def update
-    @user_detail = UserDetail.find(params[:id])
+    @user_detail = UserDetail.find(params[:id], :fname => params[:fname], :lname => params[:lname], :email => params[:email])
 
     respond_to do |format|
       if @user_detail.update_attributes(params[:user_detail])

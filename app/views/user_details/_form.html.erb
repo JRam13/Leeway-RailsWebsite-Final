@@ -6,7 +6,7 @@
   <div class="body">
     <div class="body_resize">
       <div class="right">
-        <form action="#" method="post" id="signup">
+        <form action="/user_details/<%= @user_detail.id %>/put" method="put" id="signup">
           <ol>
 
             <li>
@@ -31,7 +31,7 @@
             
 
             <li class="buttons">
-              <input type="image" name="imageField" id="imageField" src="/assetsimages/submit.png" class="send" />
+              <input type="image" name="commit" id="imageField" src="/assetsimages/submit.png" class="actions" />
               <div class="clr"></div>
             </li>
             

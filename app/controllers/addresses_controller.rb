@@ -72,7 +72,7 @@ class AddressesController < ApplicationController
     #@address.phone = params[:phone]
     #@address.save
 
-    Address.update(params[:id], :phone => params[:phone])
+    Address.update(params[:id], :phone => params[:phone], :address1 => params[:address1],:address2 => params[:address2], :city => params[:city], :state => params[:state], :zip5 => params[:zip5])
 
     respond_to do |format|
       if @address.update_attributes(params[:address])
