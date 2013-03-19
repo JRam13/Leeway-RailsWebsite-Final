@@ -67,10 +67,12 @@ class AddressesController < ApplicationController
   # PUT /addresses/1.json
   def update
     @address = Address.find(params[:id])
-    @address.user_id = session[:user_id]
+    #@address.user_id = session[:user_id]
 
-    @address.phone = params[:phone]
+    #@address.phone = params[:phone]
+    #@address.save
 
+    Address.update(params[:id], :phone => params[:phone])
 
     respond_to do |format|
       if @address.update_attributes(params[:address])

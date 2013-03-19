@@ -1,5 +1,7 @@
 OneWayAir::Application.routes.draw do
 
+ get "addresses/:id/put" => 'addresses#update'
+
   resources :addresses
   resources :credit_cards
   resources :user_details

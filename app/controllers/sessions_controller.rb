@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
         session[:id] = user.id
 
         @userdes = UserDetail.find_by_user_id(user.id)
-        session[:admin] = @userdes.admin
+        #session[:admin] = @userdes.admin
 
         redirect_to user_sites_url, notice: "Logged in"
 
