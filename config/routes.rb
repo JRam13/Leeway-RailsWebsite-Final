@@ -1,6 +1,7 @@
 Leeway::Application.routes.draw do
 
  get "addresses/:id/put" => 'addresses#update'
+ get "user_details/:id/put" => 'user_details#update'
 
   resources :addresses
   resources :credit_cards
