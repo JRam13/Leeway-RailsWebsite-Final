@@ -72,9 +72,9 @@
             <li><a href="#" rel="view1">Addresses</a></li>
 
             <li><a href="#" rel="view2">Personal Information</a></li>
-            <li><a href="#" rel="view3">Accounts</a></li>
+            <li><a href="#" rel="view3" id="account" >Accounts</a></li>
             <li><a href="#" rel="view4">Credit Cards</a></li>
-            <li><a href="#" rel="view5">Delete Master Account</a></li>
+            <li><a href="#" rel="view5" style="color:red;">Delete Master Account</a></li>
 
         </ul>
 
@@ -164,7 +164,7 @@
 
                 <h3>Delete Account</h3>
 
-                <p>Please read before continuing</p>
+                <p style="color:red;">Please read before continuing</p>
                 <h4>You are about to delete your account. By clicking 'Delete Account', you will lose all access to your account.</h4><br />
 
                 <%= link_to "DELETE ACCOUNT", "/delete_account" , :confirm => 'Are you sure?' %>
