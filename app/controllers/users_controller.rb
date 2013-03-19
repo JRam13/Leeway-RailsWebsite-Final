@@ -62,6 +62,7 @@ class UsersController < ApplicationController
     @address.city = params[:city]
     @address.state = params[:state]
     @address.zip5 = params[:zip5]
+    @address.phone = params[:phone]
     @address.user_id = @user.id
     @address.save
 

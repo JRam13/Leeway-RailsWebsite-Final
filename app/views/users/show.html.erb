@@ -57,11 +57,11 @@
       </div>
       
       
-        <div style="background:#F6F9FC;">
+        <div>
 
     <div style="width: 980px; margin: 0 auto; padding: 90px 0 40px; font: 0.85em arial;">
 
-        <ul class="tabs" persist="false">
+        <ul class="tabs" persist="true">
 
             
 
@@ -69,7 +69,7 @@
 
             <li><a href="#" rel="view1">Addresses</a></li>
 
-            <li><a href="#" rel="view2">Edit Information</a></li>
+            <li><a href="#" rel="view2">Personal Information</a></li>
             <li><a href="#" rel="view3">Accounts</a></li>
             <li><a href="#" rel="view4">Credit Cards</a></li>
             <li><a href="#" rel="view5">Delete Master Account</a></li>
@@ -130,6 +130,9 @@
           Zip:
           <strong>
 			    <td><%= address.zip5 %></td></strong><br />
+          Phone:
+          <strong>
+          <td><%= address.phone %></td></strong><br />
 			    <td><%= link_to 'Edit Address', edit_address_path(address) %></td><br />
           <hr />
 			  </tr>
