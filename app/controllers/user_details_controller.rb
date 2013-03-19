@@ -67,11 +67,11 @@ class UserDetailsController < ApplicationController
   def update
     @user_detail = UserDetail.find(params[:id])
 
-    UserDetail.update(params[id], :fname => params[:fname], :lname => params[:lname], :email => params[:email])
+    UserDetail.update(params[:id], :fname => params[:fname], :lname => params[:lname], :email => params[:email])
 
     respond_to do |format|
       if @user_detail.update_attributes(params[:user_detail])
-        format.html { redirect_to @user_detail, notice: 'User detail was successfully updated.' }
+        format.html { redirect_to user_path(session[:user_id ]), notice: 'User detail was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

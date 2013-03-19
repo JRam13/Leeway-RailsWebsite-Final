@@ -55,6 +55,7 @@
       <div class="bigbody">
       <br />
       	<h2>Account Information</h2>
+        <p style="color:red;"><%= notice %></p>
       </div>
       
       
@@ -82,7 +83,7 @@
             <div id="view3" class="tabcontent">
 
                 <h3>Accounts</h3><br />
-                <p><%= notice %></p>
+                
                 <% @int = 1 %>
                 <% @user.user_sites.each do |user_site| %>
 				  <tr>
@@ -112,7 +113,6 @@
             <div id="view1" class="tabcontent">
 
                 <h3>Addresses</h3>
-                <%= notice %>
 
 			    <% @user.addresses.each do |address| %>
 			  <tr>
