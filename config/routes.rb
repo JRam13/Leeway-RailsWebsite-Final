@@ -1,4 +1,4 @@
-OneWayAir::Application.routes.draw do
+Leeway::Application.routes.draw do
 
  get "addresses/:id/put" => 'addresses#update'
 
