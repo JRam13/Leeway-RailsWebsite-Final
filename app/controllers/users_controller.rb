@@ -73,7 +73,7 @@ class UsersController < ApplicationController
     @userdetail.user_id = @user.id
     @userdetail.save
     
-    Mailer.confirm().deliver
+    #Mailer.confirm().deliver
 
     respond_to do |format|
       if @user.save
