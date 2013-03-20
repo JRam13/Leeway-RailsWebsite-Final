@@ -68,13 +68,13 @@ Address.create user_id: 2, address1: "address1"
 Address.create user_id: 3, address1: "address2"
 Address.create user_id: 4, address1: "address3"
 Address.create user_id: 5, address1: "address4"
-Address.create user_id: 6, address1: "Merchandise Mart", address2: "222 W Merchandise Mart Plaza", city: "Chicago", state: "IL", zip5: 60654, zip4: 0000, country: "USA", phone: 1234567890
-CreditCard.create user_id: 1, number: 0006, month: 1, year: 1970, ccv: 999
-CreditCard.create user_id: 2, number: 0006, month: 2, year: 1970, ccv: 999
-CreditCard.create user_id: 3, number: 0006, month: 3, year: 1970, ccv: 999
-CreditCard.create user_id: 4, number: 0006, month: 4, year: 1970, ccv: 999
-CreditCard.create user_id: 5, number: 0006, month: 5, year: 1970, ccv: 999
-CreditCard.create user_id: 6, number: 0006, month: 5, year: 1970, ccv: 999
+Address.create user_id: 6, address1: "Merchandise Mart", address2: "222 W Merchandise Mart Plaza", city: "Chicago", state: "IL", zip5: 60654, zip4: 0000, country: "USA", phone: "1234567890"
+CreditCard.create user_id: 1, number: "0006", month: 1, year: 1970, ccv: 999
+CreditCard.create user_id: 2, number: "0006", month: 2, year: 1970, ccv: 999
+CreditCard.create user_id: 3, number: "0006", month: 3, year: 1970, ccv: 999
+CreditCard.create user_id: 4, number: "0006", month: 4, year: 1970, ccv: 999
+CreditCard.create user_id: 5, number: "0006", month: 5, year: 1970, ccv: 999
+CreditCard.create user_id: 6, number: "0006", month: 5, year: 1970, ccv: 999
 UserDetail.create user_id: 1, fname: "name0", admin: true
 UserDetail.create user_id: 2, fname: "name1", admin: false
 UserDetail.create user_id: 3, fname: "name2"

@@ -22,14 +22,14 @@ ActiveRecord::Schema.define(:version => 20130316222539) do
     t.string   "country"
     t.integer  "zip5"
     t.integer  "zip4"
-    t.integer  "phone"
+    t.string   "phone"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "credit_cards", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "number"
+    t.string   "number"
     t.integer  "month"
     t.integer  "year"
     t.integer  "ccv"
