@@ -4,20 +4,6 @@ class Address < ActiveRecord::Base
   belongs_to :user
   has_many :credit_cards
 
-  validate :zip_5_valid
-
-  def all
-    validates :number, :presence => true
-  end
-
-
-  def zip_5_valid
-    unless self.zip5.to_s.length == 5
-      errors.add(:zip5, "Zip Code Must Be 5 Digits")
-    end
-  end
-
-
 after_create :cleanup
 
   def cleanup
