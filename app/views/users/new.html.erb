@@ -1,17 +1,19 @@
 <%= render '/layouts/top' %>
 <div id="slider2">
 
+<!--
 <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
       <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <li><p style="color:red;"><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
+-->
 
 
     <h2>Sign Up <%= notice %></h2>

@@ -1,7 +1,7 @@
 
  <form action="/users" method="post" id="signup">
           <ol>
-          <h4>PERSONAL INFORMATION</h4>
+          <h3>PERSONAL INFORMATION</h3><br />
             <li>
               <label for="fname">First Name</label>
               <label for="lname">Last Name</label>
@@ -49,17 +49,32 @@
             
             
             <br /><br /><br /><br />
-            <h4>ACCOUNT INFORMATION</h4>
+            <h3>ACCOUNT INFORMATION</h3><br />
+
+          <% if @user.errors.messages.keys.include?(:name) %>
+          <h4 style="color:red;">Username already taken</h4>
+          <% end %>
+
+
+          
           <li>
               <label for="name">User Name</label>
+              
           </li>
           <li>
-            <% if @user.errors.messages.keys.include?(:name) %>
-            ERROR!
-            <% end %>
               <input id="name" name="name" class="smallfield" />
 
-            </li>
+          </li>
+
+
+          <li>
+          <% if @user.errors.messages.keys.include?(:password) %><br />
+          <h4 style="color:red;">Password can't be blank</h4>
+          <% end %> 
+        </li>
+
+
+
           <li>
               <label for="password">Password</label>
           </li>
