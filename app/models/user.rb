@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 
   has_secure_password
   validates_uniqueness_of :name
-  validates :name, :uniqueness => true
+  #validates :name, :uniqueness => true
 
   has_many :user_sites
   has_many :sites, :through => :user_sites
@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   has_many :credit_cards
   has_many :addresses
 
-  validate :blah
+  #validate :blah
  
   def blah
     if !User.find_by_name("jeff").blank?
