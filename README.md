@@ -1,3 +1,14 @@
+Leeway - Rails WebApp:
+____________
+
+Final project for Web Development. Collaborative effor with Paul Roales. 
+
+
+SCREENSHOTS:
+____________
+
+![Alt text](screen1.png "Screenshot 1")
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
