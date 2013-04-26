@@ -1,4 +1,4 @@
-Leeway - Rails WebApp:
+Leeway - Rails WebApp
 =============
 
 Final project for Web Development. Collaborative effort with Paul Roales. 
