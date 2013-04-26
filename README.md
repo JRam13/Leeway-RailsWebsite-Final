@@ -3,6 +3,8 @@ Leeway - Rails WebApp:
 
 Final project for Web Development. Collaborative effort with Paul Roales. 
 
+Live Demo www.getleeway.com (Please note this is hosted on Heroku, it might be really slow).
+
 
 SCREENSHOTS:
 ------------
