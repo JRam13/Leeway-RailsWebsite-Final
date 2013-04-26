@@ -1,13 +1,19 @@
 Leeway - Rails WebApp:
-____________
+=============
 
-Final project for Web Development. Collaborative effor with Paul Roales. 
+Final project for Web Development. Collaborative effort with Paul Roales. 
 
 
 SCREENSHOTS:
-____________
+------------
 
 ![Alt text](screen1.png "Screenshot 1")
+
+![Alt text](screen2.png "Screenshot 1")
+
+![Alt text](screen3.png "Screenshot 1")
+
+![Alt text](screen4.png "Screenshot 1")
 
 == Welcome to Rails
 
